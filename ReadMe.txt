@@ -3,3 +3,5 @@
 Workspace name : c:/Workspace_Semi
 project name : SemiProject
 입니다.
+
+clone 위치는 C:\git\SemiProject에 해주세요.
