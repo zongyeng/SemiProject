@@ -1,7 +1,7 @@
-±âº» ¼­¹ö : tomcat 9
-¾ð¾î ¼¼ÆÃ : UTF-8
+ï¿½âº» ï¿½ï¿½ï¿½ï¿½ : tomcat 9
+ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : UTF-8
 Workspace name : c:/Workspace_Semi
 project name : SemiProject
-ÀÔ´Ï´Ù.
+ï¿½Ô´Ï´ï¿½.
 
-clone À§Ä¡´Â C:\git\SemiProject¿¡ ÇØÁÖ¼¼¿ä.
+clone ï¿½ï¿½Ä¡ï¿½ï¿½ C:\git\SemiProjectï¿½ï¿½ ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.
