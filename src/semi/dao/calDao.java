@@ -1,4 +1,4 @@
-package com.cal.dao;
+package semi.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.cal.dto.calDto;
 import common.JDBCTemplate;
+import semi.dto.calDto;
 
 public class calDao extends JDBCTemplate{
 	

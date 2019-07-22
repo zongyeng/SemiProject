@@ -1,10 +1,10 @@
-package com.cal.dao;
+package semi.dao;
 
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-import com.cal.dto.calDto;
+import semi.dto.calDto;
 
 public class Util {
 	

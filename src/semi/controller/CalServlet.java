@@ -1,4 +1,4 @@
-package com.cal.controller;
+package semi.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.cal.dao.Util;
-import com.cal.dao.calDao;
-import com.cal.dto.calDto;
+import semi.dao.Util;
+import semi.dao.calDao;
+import semi.dto.calDto;
 
 
 @WebServlet("/cal.do")

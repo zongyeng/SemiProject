@@ -1,4 +1,4 @@
-package com.cal.dto;
+package semi.dto;
 
 import java.util.Date;
 
