@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import semi.dao.Util;
 import semi.dao.DaoDatabase1;
+import semi.dto.DtoDatabase1;
 import semi.dto.calDto;
 
 
@@ -21,11 +22,6 @@ public class ControllerMoving extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	DaoDatabase1 dao = new DaoDatabase1();
-	
-	/**
-	 * 
-	 * 
-	 */
 
     public ControllerMoving() {
 
@@ -58,7 +54,7 @@ public class ControllerMoving extends HttpServlet {
 			
 			String mdate = year+Util.isTwo(month)+Util.isTwo(date)+Util.isTwo(hour)+Util.isTwo(min);
 					
-			calDto dto = new calDto();
+			DtoDatabase1 dto = new DtoDatabase1();
 			dto.setId(id);
 			dto.setTitle(title);
 			dto.setContent(content);
@@ -82,7 +78,7 @@ public class ControllerMoving extends HttpServlet {
 			
 			String yyyyMMdd = year + Util.isTwo(month)+Util.isTwo(date);
 			
-			List<calDto> list = dao.getCalList("kh", yyyyMMdd);
+			List<DtoDatabase1> list = dao.getCalList("kh", yyyyMMdd);
 			request.setAttribute("list", list);
 			dispatch("callist.jsp", request, response);
 			

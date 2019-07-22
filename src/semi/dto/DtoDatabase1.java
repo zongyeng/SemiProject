@@ -1,164 +1,81 @@
 package semi.dto;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
-import common.JDBCTemplate;
-import semi.dto.calDto;
-
-public class DtoDatabase1 extends JDBCTemplate{
+public class DtoDatabase1{
+	private int myno;
+	private String myid;
+	private String mypw;
+	private String myname;
+	private String myaddr;
+	private String myphone;
+	private String myemail;
+	private String myenabled;
+	public DtoDatabase1() {}
 	
-	public List<DtoDatabase1> getCalList(String id, String yyyyMMdd){
-		Connection con = getConnection();
-		PreparedStatement pstm = null;
-		ResultSet rs = null;
-		List<DtoDatabase1> list = new ArrayList<DtoDatabase1>();
-		
-		String sql = " SELECT SEQ,ID,TITLE,CONTENT,MDATE,REGDATE FROM CALBOARD WHERE ID = ? AND SUBSTR(MDATE,1,8) = ? ";
-		try {
-			pstm = con.prepareStatement(sql);
-			pstm.setString(1, id);
-			pstm.setString(2, yyyyMMdd);
-			
-			rs = pstm.executeQuery();
-			
-			while(rs.next()) {
-				DtoDatabase1 dto = new calDto(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getDate(6));
-				list.add(dto);
-			}
-		} catch (SQLException e) {
-			System.out.println("쿼리문 오류"+sql);
-			e.printStackTrace();
-		} finally {
-			close(rs, pstm, con);
-		}
-		
-		
-		return list;
+	public DtoDatabase1(int myno, String myid, String mypw, String myname, String myaddr, String myphone,
+			String myemail, String myenabled, String myrole) {
+		this.myno = myno;
+		this.myid = myid;
+		this.mypw = mypw;
+		this.myname = myname;
+		this.myaddr = myaddr;
+		this.myphone = myphone;
+		this.myemail = myemail;
+		this.myenabled = myenabled;
+		this.myrole = myrole;
 	}
-	
-	public int insertCalBoard(DtoDatabase1 dto) {
-		Connection con = getConnection();
-		PreparedStatement pstm = null;
-		int res = 0;
-		String sql = " INSERT INTO CALBOARD VALUES(CALBOARDSEQ.NEXTVAL,?,?,?,?,SYSDATE) ";
-		
-		try {
-			pstm = con.prepareStatement(sql);
-			
-			pstm.setString(1, dto.getId());
-			pstm.setString(2, dto.getTitle());
-			pstm.setString(3, dto.getContent());
-			pstm.setString(4, dto.getMdate());
-			
-			res = pstm.executeUpdate();
-			if(res > 0) {
-				commit(con);
-			} else {
-				rollback(con);
-			}
-			
-		} catch (SQLException e) {
-			System.out.println("쿼리문 실행 오류"+sql);
-			e.printStackTrace();
-		} finally {
-			close(pstm, con);
-		}
-		
-		
-		return res;
+	public int getMyno() {
+		return myno;
 	}
-	
-	public int deleteCalBoard(int seq) {
-		Connection con = getConnection();
-		PreparedStatement pstm = null;
-		int res = 0;
-		String sql = " DELETE FROM CALBOARD WHERE SEQ = ? ";
-		
-		try {
-			pstm = con.prepareStatement(sql);
-			pstm.setInt(1, seq);
-			
-			res = pstm.executeUpdate();
-			if(res > 0) {
-				commit(con);
-			} else {
-				rollback(con);
-			}
-			
-		} catch (SQLException e) {
-			System.out.println("쿼리문 실행 오류"+sql);
-			e.printStackTrace();
-		} finally {
-			close(pstm, con);
-		}
-		
-		return res;
+	public void setMyno(int myno) {
+		this.myno = myno;
 	}
-	
-	public List<DtoDatabase1> getCalViewList(String id, String yyyyMM){
-		
-		List<DtoDatabase1> list = new ArrayList<DtoDatabase1>();	
-		Connection con = getConnection();
-		PreparedStatement pstm = null;
-		ResultSet rs = null;
-		
-		String sql = " SELECT * FROM(SELECT (ROW_NUMBER() OVER(PARTITION BY SUBSTR(MDATE,1,8) ORDER BY MDATE)) RN, "
-				+ " SEQ, ID, TITLE, CONTENT, MDATE, REGDATE FROM CALBOARD WHERE ID = ? AND SUBSTR(MDATE,1,6) = ?) "
-				+ " WHERE RN BETWEEN 1 AND 3 ";
-		
-		try {
-			pstm = con.prepareStatement(sql);
-			pstm.setString(1, id);
-			pstm.setString(2, yyyyMM);
-			
-			rs = pstm.executeQuery();
-			
-			while(rs.next()) {
-							// 1번 INDEX에는 ROW_NUMBER(RN)이 들어 있기때문에 2번부터 시작 !!
-				calDto dto = new calDto(rs.getInt(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getDate(7));
-				list.add(dto);
-			}
-		} catch (SQLException e) {
-			System.out.println("쿼리문 오류"+sql);
-			e.printStackTrace();
-		} finally {
-			close(rs, pstm, con);
-		}
-		
-		
-		return list;
+	public String getMyid() {
+		return myid;
 	}
-	
-	public int getCalViewCount(String id, String yyyyMMdd) {
-		Connection con = getConnection();
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		int count = 0;
-		
-		String sql = " SELECT COUNT(*) FROM CALBOARD WHERE ID = ? AND SUBSTR(MDATE,1,8) = ? ";
-		
-		try {
-			pstmt = con.prepareStatement(sql);
-			pstmt.setString(1, id);
-			pstmt.setString(2, yyyyMMdd);
-			
-			rs = pstmt.executeQuery();
-			
-			while (rs.next()) {
-				count = rs.getInt(1);
-			}
-
-		} catch (SQLException e) {
-			System.out.println("sql 자료 가져오기 실패");
-			e.printStackTrace();
-		}
-		
-		return count;
+	public void setMyid(String myid) {
+		this.myid = myid;
 	}
-
+	public String getMypw() {
+		return mypw;
+	}
+	public void setMypw(String mypw) {
+		this.mypw = mypw;
+	}
+	public String getMyname() {
+		return myname;
+	}
+	public void setMyname(String myname) {
+		this.myname = myname;
+	}
+	public String getMyaddr() {
+		return myaddr;
+	}
+	public void setMyaddr(String myaddr) {
+		this.myaddr = myaddr;
+	}
+	public String getMyphone() {
+		return myphone;
+	}
+	public void setMyphone(String myphone) {
+		this.myphone = myphone;
+	}
+	public String getMyemail() {
+		return myemail;
+	}
+	public void setMyemail(String myemail) {
+		this.myemail = myemail;
+	}
+	public String getMyenabled() {
+		return myenabled;
+	}
+	public void setMyenabled(String myenabled) {
+		this.myenabled = myenabled;
+	}
+	public String getMyrole() {
+		return myrole;
+	}
+	public void setMyrole(String myrole) {
+		this.myrole = myrole;
+	}
+	private String myrole;
 }
