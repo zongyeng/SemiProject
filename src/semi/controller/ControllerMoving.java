@@ -12,22 +12,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import semi.dao.Util;
-import semi.dao.calDao;
+import semi.dao.DaoDatabase1;
 import semi.dto.calDto;
 
 
 @WebServlet("/cal.do")
-public class CalServlet extends HttpServlet {
+public class ControllerMoving extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	calDao dao = new calDao();
+	DaoDatabase1 dao = new DaoDatabase1();
 	
 	/**
 	 * 
 	 * 
 	 */
 
-    public CalServlet() {
+    public ControllerMoving() {
 
     }
 

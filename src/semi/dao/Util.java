@@ -61,7 +61,6 @@ public class Util {
 						+"</p>";
 			}
 		}
-		
 		return res;
 	}
 

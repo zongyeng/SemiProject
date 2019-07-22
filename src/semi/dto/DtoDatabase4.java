@@ -1,4 +1,4 @@
-package semi.dao;
+package semi.dto;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import java.util.List;
 import common.JDBCTemplate;
 import semi.dto.calDto;
 
-public class calDao extends JDBCTemplate{
+public class DtoDatabase4 extends JDBCTemplate{
 	
 	public List<calDto> getCalList(String id, String yyyyMMdd){
 		Connection con = getConnection();
