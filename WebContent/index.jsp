@@ -1,18 +1,43 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <% request.setCharacterEncoding("UTF-8");%>
+    <% response.setContentType("text/html; charset=UTF-8");%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
 
-
-<body>
-
-
-	<h1>테스트 page</h1>
-	<h2>훈성 test</h2>
+	function registForm(){
+		location.href ="logincontroller.jsp?command=registform";
+	}
 	
+
+</script>
+</head>
+<body>
+	<form action="logincontroller.jsp" method="post">
+		<input type="hidden" name="command" value="login">
+		<table border="1">
+			<col width="100px">
+			<col width="100px">
+			<tr>
+				<th>I   D</th>
+				<td><input type="text" name="id"></td>
+			</tr>
+			<tr>
+				<th>P  W</th>
+				<td><input type="password" name="pw"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="login">
+					<input type="button" value="regist" onclick="registForm()">
+				</td>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>

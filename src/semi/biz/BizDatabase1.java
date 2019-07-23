@@ -3,23 +3,39 @@ package semi.biz;
 import java.util.List;
 
 import common.JDBCTemplate;
+import semi.dao.DaoDatabase1;
 import semi.dto.DtoDatabase1;
 
 public class BizDatabase1 extends JDBCTemplate{
-	
-	public List<DtoDatabase1> getCalList(String id, String yyyyMMdd){
-		return null;
+	static DaoDatabase1 dao;
+	public BizDatabase1() {
+		dao = new DaoDatabase1();
 	}
-	public int insertCalBoard(DtoDatabase1 dto) {
-		return 0;
+	public DtoDatabase1 login(String myid, String mypw) {
+		return dao.login(myid, mypw);
 	}
-	public int deleteCalBoard(int seq) {
-		return 0;
+	public String idChk(String myid) {
+		return dao.idChk(myid);
 	}
-	public List<DtoDatabase1> getCalViewList(String id, String yyyyMM){
-		return null;
+	public int update(DtoDatabase1 dto) {
+		return dao.update(dto);
 	}
-	public int getCalViewCount(String id, String yyyyMMdd) {
-		return 0;
+	public int deleteUser(int myno) {
+		return dao.deleteUser(myno);
+	}
+	public int insert(DtoDatabase1 dto) {
+		return dao.insert(dto);
+	}
+	public List<DtoDatabase1> alluser(){
+		return dao.alluser();
+	}
+	public List<DtoDatabase1> enableduser(){	
+		return dao.enableduser();
+	}
+	public int createuser(){	
+		return dao.createuser();
+	}
+	public int updaterole(int myno, String myrole) {
+		return dao.updaterole(myno, myrole);
 	}
 }
