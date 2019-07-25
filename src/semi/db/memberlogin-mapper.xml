@@ -44,8 +44,7 @@ VALUES(MEMBERBOARDSEQ.NEXTVAL,#{myid},#{mypw},#{myname},#{myaddr},#{myphone},#{m
 	ORDER BY MYNO
 </select>
 
-<>
-<!--  ---------------------------------------------------------- -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
 
 <select id ="selectOne" resultType="dto">
 	SELECT SEQ,WRITER,TITLE,CONTENT,REGDATE
