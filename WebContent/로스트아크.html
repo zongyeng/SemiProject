@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LostArk</title>
+
+<script type="text/javascript">
+	var images = ['445e2301c9d14db7bbd119cdfe03fe2e','0321bfc99c1f428287c9a4c52761521c','b3d2fc5301514bb3a36bc7cc19ff0c67','9bceb6156f534f758d4813b737a44e36'];
+	var num = 0;
+	setInterval(function() {
+		num++;
+		if(num > 3 ){
+		num =0;
+		}
+		 document.getElementById("wholemenu").style.backgroundImage="url('resources/banner/" + images[num] + ".jpg')";
+		 for(var i=0; i<4; i++){
+		 document.getElementById("menubottomdivspan"+i).style.color="#858995";
+		 }
+		 document.getElementById("menubottomdivspan"+num).style.color="White";
+	},5000);
+ 
+	function registForm() {
+      document.getElementById("startlogin").style.display = "block";
+   }
+   function closeWin1(){
+   document.getElementById("startlogin").style.display = "none";
+   }
+   function closeWin2() {
+	  location.href = "https://member.onstove.com/auth/login?inflow_path=lost_ark&redirect_url=https%3a%2f%2flostark.game.onstove.com%2fMain";
+   }
+   function menuright(){
+		
+		num++;
+		if(num > 3 ){
+		num =0;
+		}
+		 document.getElementById("wholemenu").style.backgroundImage="url('resources/banner/" + images[num] + ".jpg')";
+		 for(var i=0; i<4; i++){
+		 document.getElementById("menubottomdivspan"+i).style.color="#858995";
+		 }
+		 document.getElementById("menubottomdivspan"+num).style.color="White";
+	}
+	
+	function menuleft(){
+		
+		num--;
+		if(num < 0 ){
+		num =3;
+		}
+		 document.getElementById("wholemenu").style.backgroundImage="url('resources/banner/" + images[num] + ".jpg')";
+		  for(var i=0; i<4; i++){
+		 document.getElementById("menubottomdivspan"+i).style.color="#858995";
+		 }
+		 document.getElementById("menubottomdivspan"+num).style.color="White";
+	}
+	
+	function event1(){
+		num=0;
+		 document.getElementById("wholemenu").style.backgroundImage="url('resources/banner/" + images[num] + ".jpg')";
+		  for(var i=0; i<4; i++){
+		 document.getElementById("menubottomdivspan"+i).style.color="#858995";
+		 }
+		 document.getElementById("menubottomdivspan"+num).style.color="White";
+	}
+	function event2(){
+		num=1;
+		 document.getElementById("wholemenu").style.backgroundImage="url('resources/banner/" + images[num] + ".jpg')";
+		  for(var i=0; i<4; i++){
+		 document.getElementById("menubottomdivspan"+i).style.color="#858995";
+		 }
+		 document.getElementById("menubottomdivspan"+num).style.color="White";
+	}
+	function event3(){
+		num=2;
+		 document.getElementById("wholemenu").style.backgroundImage="url('resources/banner/" + images[num] + ".jpg')";
+		  for(var i=0; i<4; i++){
+		 document.getElementById("menubottomdivspan"+i).style.color="#858995";
+		 }
+		 document.getElementById("menubottomdivspan"+num).style.color="White";
+	}
+	function event4(){
+		num=3;
+		 document.getElementById("wholemenu").style.backgroundImage="url('resources/banner/" + images[num] + ".jpg')";
+		  for(var i=0; i<4; i++){
+		 document.getElementById("menubottomdivspan"+i).style.color="#858995";
+		 }
+		 document.getElementById("menubottomdivspan"+num).style.color="White";
+	}
+	
+	function link(){
+		if(num==0) {
+			location.href = "https://lostark.game.onstove.com/Promotion/Update/190605/Daily";
+		}else if(num ==1) {
+			location.href = "https://lostark.game.onstove.com/Promotion/Update/190515/Expedition";
+		}else if(num ==2) {
+			location.href = "https://lostark.game.onstove.com/Promotion/Play/Pctime8";
+		}else if(num ==3) {
+			location.href = "https://lostark.game.onstove.com/Promotion/Bingo/190529";
+		}
+	}
+	
+	function openwholegame(){
+	if(document.getElementById("wholegame").style.visibility = "hidden")
+	{ 
+	document.getElementById("wholegame").style.visibility = "visible"; 
+	}else if(document.getElementById("wholegame").style.visibility = "visible")
+	{ 
+	document.getElementById("wholegame").style.visibility = "hidden"; 
+	}
+   }
+
+
+
+</script>
+<style type="text/css">
+	* { margin : 0px; padding : 0px;}
+	#startlogin {
+	 position: absolute;
+      top: 0;
+      left: 0;
+	  width: 100%;
+	  height : 3636px;
+	  display: none;
+	  background-color : rgba(0,0,0,0.7);
+	}
+	
+	
+	#startlogindiv {
+	  position: absolute;
+      top: 10%;
+	  width: 80%;
+	  height : 400px;
+	  margin-left: 10%;
+	  margin-right : 10%;
+	  }
+	  
+	#divform{   border: 1px solid black;
+				background: White;
+				margin : 0 auto;
+				width: 445px;
+				height : 280px;		
+				}
+				
+	.exit { height : 60px; text-align : right; padding-left : 15px; padding-right : 15px;
+			padding-top : 10px;}			
+	.startlogindivdiv { height : 85px;}
+	.startlogindivdiv2 {  width : 257px; height : 50px; margin : 0 auto; font-size : 20px;}
+	.startlogindivdiv3 { width : 130px; height : 50px; color : White; background : #222222;
+							margin : 0 auto;}
+	.startlogindivdiv3 h4 {  height :20px; width : 32px; margin : 0 auto; padding-top:14px;
+							position : translate; top : 10px;}
+	.startlogindivdiv3:hover { background :#000000; cursor : pointer;}
+	
+	#body1 { z-index : 1}
+	@font-face{ font-family: "Goyang"; src:url("resources/Goyang.ttf") format("truetype");}
+
+	.lostarkbiglogo {	background: url(resources/sprite/sprite.png) no-repeat;
+						background-size : 1014px 1008px;
+						width : 189px; height: 46px; background-position : -434px -182px;
+						border: 0px;
+						position : relative; left: 60px; top:25px;}
+	.lostarkbiglogo:hover { cursor : pointer;}			
+	.newlogo {			background: url(resources/sprite/sprite.png) no-repeat;
+						background-size : 1014px 1008px;	
+						width : 15px; height: 15px; background-position : -418px -311px;
+						border: 0px;
+						max-width: initial;}
+	.contents {			background: url(resources/sprite/sprite.png) no-repeat;
+						background-size : 1014px 1008px;	
+						width : 167px; height: 25px; background-position : -256px -680px;
+						border: 0px;
+						idth: initial;}
+	.contents:hover { cursor : pointer;}
+	.menubottomimg1{ 	background: url(resources/sprite/sprite.png) no-repeat;
+						background-size : 1014px 1008px;	
+						width : 10px; height: 17px; background-position : -855px -583px;
+						border-width: 0px;
+						max-width: initial;
+						position : relative; top:20px;}
+	.menubottomimg2{ 	background: url(resources/sprite/sprite.png) no-repeat;
+						background-size : 1014px 1008px;	
+						width : 10px; height: 17px; background-position : -809px -140px;
+						border: 0px;
+						max-width: initial;
+						position : relative; top:20px;}
+	.divformimg		{ 	background: url(resources/sprite/sprite.png) no-repeat;
+						background-size : 1014px 1008px;	
+						width : 64px; height: 64px; background-position : -738px -546px;
+						max-width: initial; margin : 0 auto;}			
+	
+	#stovebar{	height : 50px; vertical-align : middele;}	
+	#stovebar .stovebarleft{ position : relative; left: 130px; top : 13px; margin : 15px;
+				font-size : 14px;}
+	.stovebarleft:hover { cursor : pointer; }
+	#stovebar .stovebarright{ position : relative; left: -40px; top : 3px; margin : 15px; font-size : 14px;
+							float : right; text-decoration:none; color:#000000;}
+	#stovebar img{ position : relative; left: 60px; top : 15px; }
+
+	#menutop { height : 90px; border-bottom-style: solid; border-bottom-width:1px;
+			border-bottom-color : rgba(255,255,255,0.10);}
+			
+	#menutop a { display: inline; color:White; font-family: "Goyang"; font-size: 20px;
+				margin : 25px; height : 40px; position : relative; left: 80px; top: 5px;
+				}
+	#menubottom	{position :absolute; clear: left; float: left;
+				left:0px; bottom:0px;
+				background: rgba(0,0,0,0.55);
+				width : 100%; height : 60px;
+				color : White;
+				}		
+				
+	#wholemenu { width : 100%; height: 670px; align : left;
+				 padding : 0px;
+				 background-repeat:no-repeat;
+				 background-position :-300px;
+				 background-image:url("resources/banner/445e2301c9d14db7bbd119cdfe03fe2e.jpg");
+				 position : relative; left:0px; right:0px;}
+	#menutop span { width :72px; height : 72px; 
+					margin-right : 0px; margin-bottom : 0px; }			 
+	#lostarklogo {  transform: translate(60px,60px);}
+	
+	.section1{ display : flex; flexwrap : wrap; position : relative;
+				width: 1200;    margin-top: 30px;
+								margin-right: 300px;		
+								margin-left: 300px;
+								padding-left : 20px;}
+								
+	.section2{	width: 1200;    margin-top: 30px;
+								margin-right: 300px;		
+								margin-left: 300px;
+								margin-bottom : 80px;
+								padding-left : 20px;}
+								
+	.section3 { padding-bottom : 20px; }
+								
+	.section4{					width: 1200; margin-top: 30px;
+								margin-right: 230px;		
+								margin-left: 230px;
+
+								padding-left : 100px;}
+														
+							
+	
+	.footer {		position : relative;
+					width: 100%;
+					height : 250px;
+					background-color: #212226;}				
+	.footerdivdiv {	width: 1260px;
+				    margin-top: 0px;
+					margin-right: auto;
+					margin-bottom: 0px;
+					margin-left: auto;
+					padding-top: 60px;
+					padding-right: 0px;
+					padding-bottom: 90px;
+					padding-left: 0px;
+					
+	}
+	.section2div{   display : flex; flexwrap : wrap; position : relative;
+					width: 1200;
+								}
+	
+	
+	.section2divdiv{ flex-grow: 0; flex-shrink: 0; flex-basis: 311px;
+				margin-right:10px;}
+				
+				
+	.section4div{ display : flex; flexwrap : wrap; position : relative;
+					margin-bottom: 5px;}
+	.section4divdiv { flex-basis : 413px; margin-right:10px;}
+	
+	.section4img { width : 1250px; margin-bottom: 30px; margin-top : 20px;}
+								
+	#news { 	flex-grow: 0; flex-shrink: 0; flex-basis: 430px;
+				margin-right:40px;}
+	#letter {   flex-grow: 0; flex-shrink: 0; flex-basis: 430px;
+				margin-right:40px;}
+	#library { 	flex-grow: 0; flex-shrink: 0; flex-basis: 430px;}
+	
+	.section1newsh1{ width : 430px; height : 60px; 
+					border-bottom-style: solid; border-bottom-width:1px;
+					border-bottom-color : rgba(0,0,0,0.10);}
+	.section1letterh1{ width : 430px; height : 60px; }
+	.section1libraryh1 { width : 430px; height : 60px; }
+	.section1a { width : 430px; height : 45px; }
+	
+	
+	.newslistul li { list-style : none; }
+	.newslistli { display : flex; padding-top : 24px;}
+	.newlistdiv1 {flex-basis: 330px;}
+	.newlistdiv1a { text-decoration : none; color : #000000; }
+	.newlistdiv1a:hover { text-decoration : underline;}
+	.newlistdiv2 {margin-left:auto;
+					font-size : 14px; color: rgb(0,0,0,0.5);}
+					
+	.section2h1 { width : 1200px; height : 60px; }
+	
+	#section3div { width : 100%; height: 395px;
+				 background-repeat:no-repeat;
+				 background-position :-300px;
+				 background-image:url("resources/main/bg_world1.jpg");
+				 position : relative; left:0px; right:0px;}
+	.section3h1 {font-size : 32px; color : White;
+				margin-top : 40px;	width : 1280;
+				position : absolute; top: 60px; left: 920px;
+				}
+	#sectiondiv2 {display : flex; width : 1280px;
+					position:absolute; top:210px; left: 350px;
+					
+					}
+	#sectiondiv2 a{margin-right : 5%;
+					margin-left: 5%;
+					text-align:center;
+					flex-basis: 20%;
+					display:block;
+					box-sizing: border-box;
+					}
+					
+	#sectiondiv2 a:hover { cursor : pointer;}				
+	.ctit_world1 {opacity : 1;}
+	.ctit_world2 {opacity : .35;}
+	.ctit_world3 {opacity : .35;}
+	.ctit_world4 {opacity : .35;}
+	.ctit_world5 {opacity : .35;}
+
+	.section5bg { width : 100%; height: 630px;
+				 background-repeat:no-repeat;
+				 background-position-x: 50%;
+				 background-position-y: 50%;
+				 background-image:url("resources/main/bg_class_hawkeye.jpg");
+				 position : relative; left:0px; right:0px;}
+	.footerlogo { margin-right : 20px; float : left }
+	.footerdiv  { margin-left : 200px;
+				  margin-right : 200px;}
+	.footerul { list-style:none; }
+	.footerul li{ font-color :White; font-size : 14px; 
+				  float : left; color : White; }	
+	.footerul a{ font-color :White; font-size : 15px; padding-left :5px; padding-bottom : 10px;
+				  float : left; color :#949596; 
+				  border-left-width : 1px;}						  
+
+	.footeraddress { float:left; font-size : 12px; color:#949596;
+					margin-left:15px;}
+	.footerp { float: left; font-size : 12px; color : White;
+				position : relative; left: -485px; top : 50px;}
+	.menubottomdiv { 	margin : 0 auto;
+						 width : 1300px; height : 60px;
+						 text-align : center; display: flex;}
+	.menubottomdivdiv { flex-basis : 23%; 
+						 text-align : center;padding-top : 20px;
+						 content-align : center;
+						  border-right-style: solid; border-right-width:1px;
+							  border-left-style: solid; border-left-width:1px;
+						 border-right-color :    rgba(255,255,255,0.25); border-left-color :    rgba(255,255,255,0.25);
+						 }	
+	.menubottomdivdiv:hover { cursor : pointer;}						
+	#menubottomdivspan0 {  padding-top : 20px; width : 20%; height : 60px;
+						  font-size : 15px; color : white
+						 }
+	#menubottomdivspan1 {  padding-top : 20px; width : 20%; height : 60px;
+						  font-size : 15px; color : #858995;  
+						 }
+	#menubottomdivspan2 {  padding-top : 20px; width : 20%; height : 60px;
+						  font-size : 15px; color : #858995;  
+						 }
+	#menubottomdivspan3 {  padding-top : 20px; width : 20%; height : 60px;
+						  font-size : 15px; color : #858995;  
+						 }
+	.menubottomdivimg { width : 55px; height : 60px;
+							 border-right-style: solid; border-right-width:1px;
+							  border-left-style: solid; border-left-width:1px;
+						 border-right-color :   rgba(255,255,255,0.25); border-left-color :   rgba(255,255,255,0.25);}
+	
+	
+	.menutopdiv1 { float : left; width: 250px;}
+	.menutopdiv2 { float : left; height : 91px;}
+	.menutopdiv3 { float : right; width : 320px;}
+	.menutopdiv3img:hover { cursor : pointer; content : url('resources/layout/bt_header_gamestart_hover.png');}
+	.exit:hover { cursor : pointer; }
+	
+	.menutopdiv2div {width : 1050px; height : 61px; padding-top:30px;}
+	#menumiddle {height : 519px;}
+	#menumiddle:hover {cursor : pointer;}
+	
+	#wholegame{ position : absolute; left : 230px; top:40px;
+				width : 500px; height : 350px; visibility : hidden;}
+	#inwholegame{ display : flex; background : White; border-style : solid; border-width :1px;
+					z-index : 10; border-radius: 10px 10px 10px 10px;}
+	#wholegame1 { flex-basis : 60%; height : 350px; border-right-style : solid; border-right-width : 1px; 
+				border-right-color : rgba(0,0,0,0.2); box-sizing: border-box;}
+	#wholegame2 { flex-basis : 40%; height : 350px;}
+	.wholegameul li div:hover{ cursor : pointer;}
+	.menubottomdivimg:hover { cursor : pointer;}
+	.introclass { position: absolute; left : 50%; top: 500px; width :140px; height: 42px;}
+	.introclassdiv {position: relative; left : -555px; background : rgba(0,0,0,0);
+					border-width : 1px; border-style:solid; border-color : rgba(255,255,255,0.2); 
+					width :140px; height: 42px; text-align : center; color : White;}
+	
+	.introclassdiv:hover {background : White; color:black;}
+	.viewvideo {position: relative; left : -403px; top : -44px; background : rgba(0,0,0,0);
+					border-width : 1px; border-style:solid; border-color : rgba(255,255,255,0.2); 
+					width :140px; height: 42px; text-align : center; color : White;}	
+	.viewvideo:hover {background : White; color:black;}
+	.introclassdiv1{ margin-top:10px; color :inherit; cursor : pointer; }
+	.introclassdiv2{ margin-top:10px; color :inherit; cursor : pointer; } 
+</style>
+
+</head>
+
+<body>
+	<div id ="body1">
+		<header class = "header">
+			<div id = "stovebar">
+				<a href = "https://www.onstove.com/">
+					<img alt="bi" src="resources/layout/bi.png" width = "88px" height = "20px">
+				</a>
+				<a onclick ="openwholegame()" class = "stovebarleft"> <strong> 전체게임 </strong> </a>
+				<a href = "https://toonspoon.service.onstove.com/toonspoon/kr/main" style ="text-decoration : none; color : #000000;" class = "stovebarleft"> <strong> 툰스푼 </strong> </a>
+				<a class = "stovebarright" href="https://member.onstove.com/auth/login?redirect_url=https%3A%2F%2Flostark.game.onstove.com%2FMain"> <strong> 로그인 </strong> </a>
+			</div>
+		</header>
+		
+		<div id = "wholemenu">
+			<div id = "menutop">
+				<div class = "menutopdiv1">
+					<div onclick = "location.href = 'https://lostark.game.onstove.com/Main'"class = "lostarkbiglogo"> </div>
+				</div>	
+				<div class = "menutopdiv2"> 
+					<div class = "menutopdiv2div" >
+						<a href = "https://lostark.game.onstove.com/News/Notice/List" style ="text-decoration : none;"> 새소식 </a>
+						<a href ="https://lostark.game.onstove.com/WorldView" style ="text-decoration : none;"> 게임소개 </a>
+						<a href ="https://lostark.game.onstove.com/GameGuide" style ="text-decoration : none;" target = black> 게임정보 </a>
+						<a href ="https://lostark.game.onstove.com/ItemDictionary" style ="text-decoration : none;"> 베른 대도서관 </a>
+						<a href ="https://lostark.game.onstove.com/Community/Free/List" style ="text-decoration : none;"> 커뮤니티 </a>
+						<a href ="https://lostark.game.onstove.com/Shop/List/Package" style ="text-decoration : none;"> 웹 샵 </a>
+						<a href ="https://lostark.game.onstove.com/Download" style ="text-decoration : none;"> 다운로드</a>
+						<a href ="http://help.onstove.com/web/faq/serviceMain/page?game_nm=LOST_ARK&game=2017090003&channel=stove" style ="text-decoration : none;" target = black> 고객센터</a>
+					</div>
+				</div>
+				<div class = "menutopdiv3">
+							<a onclick = "registForm()">
+								<img class ="menutopdiv3img" alt="bi" src="resources/layout/bt_header_gamestart.png" align="right"/>
+							</a>
+				</div>
+			</div>
+			<div onclick = "link()" id ="menumiddle">
+			</div>
+			
+			<div id = "menubottom">
+				<div class = "menubottomdiv">
+					<div onclick = "menuleft()" class = "menubottomdivimg">
+						<img class = "menubottomimg1" src=""/>
+					</div>
+					<div class = "menubottomdivdiv" onclick = "event1()">
+						<span id = "menubottomdivspan0"> 일일 에포나 의뢰 개선!</span>
+					</div>
+					<div class = "menubottomdivdiv" onclick = "event2()">
+						<span id = "menubottomdivspan1"> 호감도 원정대 통합!</span>
+					</div>
+					<div class = "menubottomdivdiv" onclick = "event3()">
+						<span id = "menubottomdivspan2"> 폭신폭신 강아지를 부탁해! PC방 해피위크!</span>
+					</div>
+					<div class = "menubottomdivdiv" onclick = "event4()">
+						<span id = "menubottomdivspan3"> 슈퍼빙고 완성하GO 빙고 인형탈 받GO!</span>
+					</div>
+					<div class = "menubottomdivimg" onclick = "menuright()" >
+						<img class = "menubottomimg2" src=""/>
+					</div>
+					
+				</div>
+
+			</div>
+			
+		</div>
+		
+		<div class = "middle"> 
+
+			<section class="section1">
+				<div id = "news">
+					<h1 class ="section1newsh1"> 
+						<a class ="section1a" href = "https://lostark.game.onstove.com/News/Notice/List" target = "blank" style ="text-decoration : none; color : #000000;">새소식 </a>
+					</h1>
+					<ul id ="newslistul">
+						<li class = "newslistli"> 
+							<div class="newlistdiv1">	
+								<a class = "newlistdiv1a" href = "https://lostark.game.onstove.com/News/Notice/Views/475?page=1&searchtype=0&searchtext=&noticetype=all" target = "blank">
+									<strong>[정상화] kt 휴대폰 결제 서비스 장애...</strong>
+								</a>
+								<img class = "newlogo" src=""/>
+							</div>
+							<div class="newlistdiv2">	
+								<strong>18시간전</strong>
+							</div>
+						</li>
+						<li class = "newslistli"> 
+							<div class="newlistdiv1">
+								<a class = "newlistdiv1a" href = "https://lostark.game.onstove.com/News/Notice/Views/472?page=1&searchtype=0&searchtext=&noticetype=all" target = "blank">
+									<strong>(안내사항 추가) 에포나 의뢰 평판 및 호...</strong>
+								</a>
+								<img class = "newlogo" src=""/>
+							</div>
+							<div class="newlistdiv2">	
+								<strong>1일 전</strong>
+							</div>
+						</li>
+						<li class = "newslistli"> 
+							<div class="newlistdiv1">
+								<a class = "newlistdiv1a" href = "https://lostark.game.onstove.com/News/Notice/Views/474?page=1&searchtype=0&searchtext=&noticetype=all" target = "blank">
+								<strong>외부 시스템 작업으로 이한 일부 결제 서...	</strong>	
+								</a>
+								<img class = "newlogo" src=""/>
+							</div>
+							<div class="newlistdiv2">	
+								<strong>2일 전</strong>
+							</div>
+						</li>
+						<li class = "newslistli"> 
+							<div class="newlistdiv1">
+								<a class = "newlistdiv1a" href = "https://lostark.game.onstove.com/News/Notice/Views/473?page=1&searchtype=0&searchtext=&noticetype=all" target = "blank">
+								<strong>'슈퍼빙고 완성하GO 빙고 인형탈 받GO!'...</strong>
+								</a>
+								<img class = "newlogo" src=""/>
+							</div>
+							<div class="newlistdiv2">	
+								<strong>2일 전</strong>
+							</div>
+						</li>
+						<li class = "newslistli"> 
+							<div class="newlistdiv1">
+								<a class = "newlistdiv1a" href = "https://lostark.game.onstove.com/News/Notice/Views/470?page=1&searchtype=0&searchtext=&noticetype=all" target = "blank">
+								<strong>5월 29일(수) 업데이트 내역 안내 </strong>
+								</a>
+								<img class = "newlogo" src=""/>
+							</div>
+							<div class="newlistdiv2">	
+								<strong>3일 전</strong>
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+				
+				<div id = "letter">
+					<h1 class ="section1letterh1"> <a href ="https://lostark.game.onstove.com/News/GMNote/List" target = "blank" style ="text-decoration : none; color : #000000;"> 리샤의 편지 </a></h1>
+					<a href = "https://lostark.game.onstove.com/News/GMNote/Views/1182"><img alt="4/30" src="resources/banner/d9455637609a44d6bedde7b2b40dca0a.jpg"></a>
+				</div>
+				
+				<div id = "library">
+					<h1 class ="section1libraryh1"> <a href ="https://lostark.game.onstove.com/Library/Tip/List" target = "blank" style ="text-decoration : none; color : #000000;"> 베른 대도서관 </a></h1>
+					<a href = "https://lostark.game.onstove.com/News/GMNote/Views/1182"><img alt="library" src="resources/main/banner_main_library.png"></a>
+				</div>
+			</section>
+			
+			<section class="section2">
+
+				<h1 class ="section2h1"> 
+					<a class ="section2a" href ="https://lostark.game.onstove.com/GameGuide" target="blank" style ="color : #000000; text-decoration: none;"> 게임 가이드 </a>
+				</h1>
+				<div class = "section2div" >
+					<div class = "section2divdiv">
+						<a href = "https://lostark.game.onstove.com/GameGuide/Pages/%EA%B2%8C%EC%9E%84%20%ED%99%94%EB%A9%B4%20%EB%B0%8F%20%EC%84%A4%EC%A0%95" target = "blank">
+							<img alt="게임화면 살펴보기" src="resources/banner/0ae546733a884f9980af24f98b77edc0.jpg">
+						</a>
+					</div>
+					<div class = "section2divdiv">
+						<a href = "https://lostark.game.onstove.com/GameGuide/Pages/%ED%80%98%EC%8A%A4%ED%8A%B8" target = "blank">
+							<img alt="퀘스트 알아보기" src="resources/banner/1550a3042b8f443981656ff014efefd0.jpg">
+						</a>
+					</div>
+					<div class = "section2divdiv">
+					<a href = "https://lostark.game.onstove.com/GameGuide/Pages/%EC%A0%84%ED%88%AC%20%EC%8A%A4%ED%82%AC" target = "blank">
+						<img alt="스킬정보 확인하기" src="resources/banner/e251c669cbc24b92a5bab608867f0b59.jpg">
+					</a>
+					</div>
+					<div class = "section2divdiv">
+						<a href = "https://lostark.game.onstove.com/GameGuide/Pages/%EC%83%9D%ED%99%9C%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0" target = "blank">
+							<img alt="생활 콘텐츠 시작하기" src="resources/banner/dc81e8bea3324c08a1bd3f9720a4278d.jpg">
+						</a>
+					</div>
+				</div>
+			</section>
+			
+			<section class="section3">
+				<div id = "section3div">
+					<h1 class ="section3h1">
+						<a href ="https://lostark.game.onstove.com/WorldView" style ="text-decoration:none; color:White;"> <strong> Story </strong></a>
+					</h1>
+					<div id = "sectiondiv2">
+					<a href = "https://lostark.game.onstove.com/WorldView?detail=0" class="ctit_world1"> <img alt="ctit_world1" src="resources/main/ctit_world1.png"> </a>
+					<a href = "https://lostark.game.onstove.com/WorldView?detail=1" class="ctit_world2"> <img alt="ctit_world2" src="resources/main/ctit_world2.png"> </a>
+					<a href = "https://lostark.game.onstove.com/WorldView?detail=2" class="ctit_world3"> <img alt="ctit_world3" src="resources/main/ctit_world3.png"> </a>
+					<a href = "https://lostark.game.onstove.com/WorldView?detail=3" class="ctit_world4"> <img alt="ctit_world4" src="resources/main/ctit_world4.png"> </a>
+					<a href = "https://lostark.game.onstove.com/WorldView?detail=4" class="ctit_world5"> <img alt="ctit_world5" src="resources/main/ctit_world5.png"> </a>
+					</div>
+				</div>		
+			</section>
+			
+			<section class="section4">
+				<div class="section4img">
+					<div onclick ="window.open('https://lostark.game.onstove.com/Contents')" class ="contents" style ="margin : 0 auto;"></div>
+				</div>
+				<div class="section4div">
+					<div class = "section4divdiv">
+						<a href = "https://lostark.game.onstove.com/Contents?detail=tripod">
+							<img alt="트라이포드" src="resources/banner/ded2f52dfd72440399dd659a025ad413.jpg" width="413px" height ="330">
+						</a>
+					</div>
+					<div class = "section4divdiv">
+						<a href ="https://lostark.game.onstove.com/Contents?detail=cinematic&sub=morai">
+							<img alt="아크던전 & 스토리미션" src="resources/banner/e3fac8f65289432eaded3d9c58201295.jpg" width="413px" height ="330">
+						</a>
+					</div>
+					<div class = "section4divdiv">
+						<a href = "https://lostark.game.onstove.com/Contents?detail=voyage&sub=adventure">
+							<img alt="항해" src="resources/banner/ddd76d41a13b47c1a8c52fb10f470cf2.jpg" width="413px" height ="330">
+						</a>
+					</div>
+				</div>
+				<div class="section4div">
+					<div class = "section4divdiv">
+						<a href = "https://lostark.game.onstove.com/Contents?detail=life-level&sub=intro">
+							<img alt="생활레벨" src="resources/banner/cf2e5c8ab19642168c0d9c1d7386515e.jpg" width="413px" height ="330">
+						</a>
+					</div>
+					<div class = "section4divdiv">
+						<a href = "https://lostark.game.onstove.com/Contents?detail=sylian&sub=intro">
+							<img alt="실리안의 지령" src="resources/banner/bb1111f40c6643c7a38080a60aa3fd1c.jpg" width="413px" height ="330">
+						</a>
+					</div>				
+					<div class = "section4divdiv">
+						<a href = "https://lostark.game.onstove.com/Contents?detail=pvp&sub=intro">
+							<img alt="증명의 전장" src="resources/banner/221e8b18aa32459a9d822a0f4a0d5e8d.jpg" width="413px" height ="330">
+						</a>
+					</div>
+				</div>
+			</section>
+			
+			<section class="section5">
+				<div class ="section5div">
+					<div class ="section5bg">
+						<div class = "introclass">
+							<div class = "introclassdiv">
+								<div onclick = "location.href ='https://lostark.game.onstove.com/Class?detail=hawkeye'" class ="introclassdiv1"> <strong>클래스 소개 </strong></div>
+							</div>
+							<div class = "viewvideo">
+								<div onclick = "location.href ='https://www.youtube.com/watch?time_continue=1&v=ZSO0V_OIUPQ'" class ="introclassdiv2"> <strong>영상 보기 </strong></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<footer class = "footer">
+			<div class = "footerdiv">
+				<div class = "footerdivdiv">
+					<img class = "footerlogo" alt="로고1" src="resources/layout/logo_rpg.png">
+					<img class = "footerlogo" alt="로고2" src="resources/layout/logo_stove.png">
+					<div>
+						<ul class = "footerul">
+							<a href="http://www.smilegate.com/ko/main/main.asp" target="blank"><li style ="padding-left : 15px;"> 회사소개 </li></a> <a> ㅣ </a>
+							<a href="https://lostark.support.onstove.com/hc/ko/categories/115000083993" target="blank"><li> 이용약관 </li></a> <a> ㅣ </a>
+							<a href="https://lostark.support.onstove.com/hc/ko/categories/115000083993" target="blank"><li> 운영정책 </li></a> <a> ㅣ </a>
+							<a href="https://lostark.support.onstove.com/hc/ko/categories/115000083993" target="blank"><li style = "color : hotpink;"> 개인정보처리방침 </li></a> <a> ㅣ </a>
+							<a href="https://lostark.support.onstove.com/hc/ko/categories/115000083993" target="blank"><li> 청소년 보호정책 </li></a> <a> ㅣ </a>
+							<a href="https://lostark.support.onstove.com/hc/ko/categories/115000083993" target="blank"><li> 게임이용등급 </li></a> <a> ㅣ </a>
+							<a href="http://help.onstove.com/web/faq/serviceMain/page?game_nm=LOST_ARK&game=2017090003&channel=stove" target="blank"><li> 고객센터 </li></a>
+						</ul>
+					</div>
+					<div>
+						<p class = "footeraddress">
+							회사명.㈜스마일게이트 알피지 대표이사.지원길 사업자등록번호. 220-88-29249 </br>
+							통신판매업 신고번호. 제 2017-성남분당-0904호 E.lostark@smilegate.com F.031-627-0400
+						</p>
+						
+					</div>
+					
+					<div>
+						<p class ="footerp">
+							<strong>&copy; Smilegate RPG & Smilegate Stove All rights reserverd </strong>
+						</p>
+					</div>
+				
+				</div>
+				
+			</div>
+			
+			
+		</footer>	
+
+	
+	</div>
+	<div id ="wholegame">
+		<div id ="inwholegame">
+			<div id = "wholegame1">
+				<div style ="text-align : center; background : #4e5666; color: White; height : 40px; border-radius: 10px 0px 0px 0px; " >	
+					<div style = "width: 100px; height : 30px; padding-top:10px; margin : 0 auto; ">
+						<span style = "text-align : center;"> <strong> PC온라인 </strong> </span>
+					</div>
+					<div style=" padding : 20px;">
+						<ul class = "wholegameul" style = "display : table; width:100%;">
+							<li style = " display : table-row; margin-bottom:10px;">
+								<div onclick = "location.href='https://lostark.game.onstove.com/Main'" style = "width : 100%; height: 30px; margin : 5px; ">
+									<a style = "display : table-cell;color :#000000;font-size : 12px; max-width : 200px; ">
+										<img src ="resources/gameshot/5.png" style = "width : 30px; height: 30px; border-radius: 3px 3px 3px 3px;"/>
+										<strong style ="position:relative; left : 10px; top : -10px; "> LostArk </strong>
+									</a>
+								</div>
+							</li>
+							<li style = " display : table-row; margin-bottom:10px;">
+								<div onclick = "location.href='http://tr.game.onstove.com/index.asp'" style = "width : 100%; height: 30px; margin : 5px;">
+									<a style = "display : table-cell;color :#000000;font-size : 12px; max-width : 200px; ">
+										<img src ="resources/gameshot/3.jpg" style = "width : 30px; height: 30px; border-radius: 3px 3px 3px 3px;"/>
+										<strong style ="position:relative; left : 10px; top : -10px; "> 테일즈 런너 </strong>
+									</a>
+								</div>
+							</li>
+							<li style = " display : table-row; margin-bottom:10px;">
+								<div onclick = "location.href='http://soulworker.game.onstove.com/Promotion/Bingo/'" style = "width : 100%; height: 30px; margin : 5px;">
+									<a style = "display : table-cell;color :#000000;font-size : 12px; max-width : 200px; ">
+										<img src ="resources/gameshot/4.png" style = "width : 30px; height: 30px; border-radius: 3px 3px 3px 3px;"/>
+										<strong style ="position:relative; left : 10px; top : -10px; "> 소울워커 </strong>
+									</a>
+								</div>
+							</li>
+							<li style = " display : table-row; margin-bottom:10px;">
+								<div onclick = "location.href='http://page.onstove.com/crossfire/kr/main'" style = "width : 100%; height: 30px; margin : 5px;">
+									<a style = "display : table-cell;color :#000000;font-size : 12px; max-width : 200px; ">
+										<img src ="resources/gameshot/2.png" style = "width : 30px; height: 30px; border-radius: 3px 3px 3px 3px;"/>
+										<strong style ="position:relative; left : 10px; top : -10px; "> 크로스파이어 </strong>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id = "wholegame2">
+				<div style ="text-align : center; background : #4e5666; color: White; height : 40px; border-radius: 0px 10px 0px 0px;" >	
+					<div style = "width: 100px; height : 30px; padding-top:10px; margin : 0 auto;">
+						<span> <strong>모바일</strong> </span>
+					</div>
+					<div>
+						<div style=" padding : 20px;">
+							<ul class = "wholegameul" style = "display : table; width:100%;">
+								<li style = " display : table-row; margin-bottom:10px;">
+									<div onclick = "location.href='http://page.onstove.com/epicseven/main'" style = "width : 100%; height: 30px; margin : 5px;">
+										<a style = "display : table-cell;color :#000000;font-size : 12px; max-width : 200px; ">
+											<img src ="resources/gameshot/8.png" style = "width : 30px; height: 30px; border-radius: 3px 3px 3px 3px;"/>
+											<strong style ="position:relative; left : 10px; top : -10px; "> 에픽세븐 </strong>
+										</a>
+									</div>
+								</li>
+								<li style = " display : table-row; margin-bottom:10px;">
+									<div onclick = "location.href='http://page.onstove.com/supertank/global/main'" style = "width : 100%; height: 30px; margin : 5px;">
+										<a style = "display : table-cell;color :#000000;font-size : 12px; max-width : 200px; ">
+											<img src ="resources/gameshot/11.png" style = "width : 30px; height: 30px; border-radius: 3px 3px 3px 3px;"/>
+											<strong style ="position:relative; left : 10px; top : -10px; "> 슈퍼탱크 대작전 </strong>
+										</a>
+									</div>
+								</li>
+								<li style = " display : table-row; margin-bottom:10px;">
+									<div onclick = "location.href='http://page.onstove.com/TheMusician/kr/main'" style = "width : 100%; height: 30px; margin : 5px;">
+										<a style = "display : table-cell;color :#000000;font-size : 12px; max-width : 200px; ">
+											<img src ="resources/gameshot/7.jpg" style = "width : 30px; height: 30px; border-radius: 3px 3px 3px 3px;"/>
+											<strong style ="position:relative; left : 10px; top : -10px; "> 더뮤지션 </strong>
+										</a>
+									</div>
+								</li>
+								<li style = " display : table-row; margin-bottom:10px;">
+									<div onclick = "location.href='http://page.onstove.com/ChaosMasters/kr/main'" style = "width : 100%; height: 30px; margin : 5px;">
+										<a style = "display : table-cell;color :#000000;font-size : 12px; max-width : 200px; ">
+											<img src ="resources/gameshot/9.png" style = "width : 30px; height: 30px; border-radius: 3px 3px 3px 3px;"/>
+											<strong style ="position:relative; left : 10px; top : -10px; "> 카오스마스터즈 </strong>
+										</a>
+									</div>
+								</li>
+								<li style = " display : table-row; margin-bottom:10px;">
+									<div onclick = "location.href='http://page.onstove.com/tahn/kr/main'" style = "width : 100%; height: 30px; margin : 5px;">
+										<a style = "display : table-cell;color :#000000;font-size : 12px; max-width : 200px; ">
+											<img src ="resources/gameshot/6.jpg" style = "width : 30px; height: 30px; border-radius: 3px 3px 3px 3px;"/>
+											<strong style ="position:relative; left : 10px; top : -10px; "> 탄 : 전장의신화 </strong>
+										</a>
+									</div>
+								</li>
+								<li style = " display : table-row; margin-bottom:10px;">
+									<div onclick = "location.href='http://page.onstove.com/snowcube/global/main'" style = "width : 100%; height: 30px; margin : 5px;">
+										<a style = "display : table-cell;color :#000000;font-size : 12px; max-width : 200px; ">
+											<img src ="resources/gameshot/10.png" style = "width : 30px; height: 30px; border-radius: 3px 3px 3px 3px;"/>
+											<strong style ="position:relative; left : 10px; top : -10px; "> 스노우큐브 </strong>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="startlogin">
+		<div id = "startlogindiv">
+			<div id = "divform">
+				<div class = "exit">
+					<img onclick = "closeWin1()" src ="resources/layout/exit.png">
+				</div>
+				<div class = "startlogindivdiv">
+					<div class = "divformimg">
+					</div>	
+				</div>
+				<div class = "startlogindivdiv2">
+					<h3> <strong> 로그인 후 이용해주세요. </strong> </h3>
+				</div>
+				<div class = "startlogindivdiv3" onclick="closeWin2()">
+					<h4>확인</h4>		
+				</div>
+			</div>
+		</div>
+	</div>
+   
+</body>
+</html>
