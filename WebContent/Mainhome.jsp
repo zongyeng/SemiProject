@@ -5,14 +5,28 @@
 <head>
 <meta charset="UTF-8">
 <title>HOME</title>
+<style type="text/css">
+	.section1 { width : 100%; height : 2000px;}
+	.section1div { width : 1250px; height :600px; margin:0 auto;
+					 background-image:url("images/musicpicture2.jpg");
+					 background-repeat: no-repeat;
+					 background-position: -300px;
+					 position: relative; overflow: hidden;}
+	.section1divdiv { width : 1256px; height: 100px; color : white;
+					font-size: 30px; text-align: center; padding-top: 50px;
+					font-weight: bold; }
+
+</style>
 </head>
 <body>
 <%@ include file="./form/header.jsp"%>
-<h1>대충 메인페이지 꾸밀곳</h1>
-<h1>대충 메인페이지 꾸밀곳</h1>
-<h1>대충 메인페이지 꾸밀곳</h1>
-<h1>대충 메인페이지 꾸밀곳</h1>
-<h1>대충 메인페이지 꾸밀곳</h1>
+<section class = "section1">
+	<div class = "section1div">
+		<div class = "section1divdiv">
+			<span> 여러분의 음악을 공유하세요! </span>
+		</div>
+	</div>
+</section>
 <%@ include file="./form/footer.jsp"%>
 </body>
 </html>

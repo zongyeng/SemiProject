@@ -7,7 +7,7 @@
 <title>header design</title>
 <style type="text/css">
 	*{ padding : 0px; margin : 0px;}
-	.header{ width : 100%; height : 200px; 
+	.header{ width : 100%; height : 154px; 
 	font-family: "Goyang"; }
 	.headerdiv1{ width: 100%; height :100px;
 				background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
@@ -31,20 +31,21 @@
 	.headerdiv2divulli {float : left; width : 250px; height : 50px;text-align:center;
 						border-left : 1px solid; border-left-color:rgba(200,200,200,0.5); 
 						border-bottom : solid 2px;
-						border-bottom-color: rgba(200,200,200,0.5);  }
+						border-bottom-color: rgba(200,200,200,0.5);
+						position : relative;  }
 	.headerdiv2divullia {line-height:50px; text-decoration: none;
 							font-weight:bold; color:#cccccc; } 
 	.headerdiv2divulli:hover { background: rgb(80,80,80); transition : 0.5s;}						
 	.headerdiv2divulli:hover .headerdiv2divullia{ color:#ffffff;}		
-	.headerdiv2divulli:hover .headerdiv2divulliul{display : block;
+	.headerdiv2divulli:hover .headerdiv2divulliul{display : block; z-index:200;
 													border-top : solid 2px;
 													border-top-color: rgba(30,110,150,0.5); }			 
 	.headerdiv2divulliul li{list-style: none;}				 
 					 
 	.headerunderdiv { width : 100%; height : 200px; margin : 0 auto;}
-	.headerdiv2divulliul {display : none; background: rgb(100,100,100); 
-	 					  line-height:50px; z-index:200;}
-	.headerdiv2divulliul li {border-bottom : solid 2px;
+	.headerdiv2divulliul {display : none; background: rgb(100,100,100); width:250px; 
+	 					  line-height:50px; position : absolute; z-index:200;}
+	.headerdiv2divulliul li {border-bottom : solid 2px; 
 							border-bottom-color: rgba(200,200,200,0.5);}
 	.headerdiv2divulliul > li a { text-decoration: none;
 							font-weight:bold; color:#cccccc;}
@@ -65,9 +66,9 @@
     .searchbardivbtn:focus {outline : none;}
     
     .logindiv {padding:30px; width : 300px;}
-    .logindivdiv {display : flex; margin-left : 50px;}
+    .logindivdiv {display : flex; margin-left : 100px;}
     .logindivdivbtn { width : 150px; height: 40px; background-color: rgba(200,200,200,0.5);
-  				  margin-left: 5px;border: none; border-radius: 10px; }
+  				  margin-left: 15px;border: none; border-radius: 10px; }
   	.logindivdivbtn:hover {background-color: #B6B6B6; transition: .8s; cursor: pointer;}			  
 	.logindivdivbtn:focus {outline : none;}
 </style>
@@ -156,11 +157,6 @@
 							</ul>
 						</li>
 					</ul>
-				</div>
-			</div>
-			<div class="headerdiv3">
-				<div class="headerdiv3div">
-					
 				</div>
 			</div>
 		</div>
