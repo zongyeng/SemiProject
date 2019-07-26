@@ -9,5 +9,6 @@
 <body>
 <%@ include file="./form/header.jsp"%>
 <h1>대충 인기 음악</h1>
+<%@ include file="./form/footer.jsp"%>
 </body>
 </html>
