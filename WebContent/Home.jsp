@@ -4,11 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>HOME</title>
 </head>
 <body>
-
-	  
-
+<%@ include file="./form/header.jsp"%>
 </body>
 </html>
