@@ -81,7 +81,7 @@
 				<div class="headerdiv1div">
 					<div class = "headerdiv1divdiv">
 						<a href = "" class="headerdiv1a"><!-- 홈으로 링크 -->
-							<img alt="Mutes logo" src="resources2/mutes2.png" width = "200px" height = "100px">
+							<img alt="Mutes logo" src="images/mutes2.png" width = "200px" height = "100px">
 						</a>
 						
 						<div class="logindiv" style="float : right;">
@@ -99,7 +99,7 @@
   							<div class="searchbardiv">
    								<input type="text" id="search" type="text" placeholder="Search"/>
   								<button class="searchbardivbtn">
-     								<img src="resources2/search.png" alt="대충 돋보기이미지" width="35px" height="35px"/>     
+     								<img src="images/search.png" alt="대충 돋보기이미지" width="35px" height="35px"/>     
    							    </button>    
  							</div>
 						</div>
