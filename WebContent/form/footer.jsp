@@ -14,8 +14,8 @@
 					height : 250px;
 					background-color: #212226;
 					display : table}	
-	.footerdiv {width: 1250px;  margin : 0 auto; }			
-	.footerdivdiv {	width: 1250px;
+	.footerdiv {width: 1000px;  margin : 0 auto; }			
+	.footerdivdiv {	width: 1000px;
 					height : 200px;
 				    margin : 0 auto;
 				    display: table-cell;
@@ -24,17 +24,17 @@
 	.footerlogo { margin-right : 20px; float : left }
 	.footerul { list-style:none; }
 	.footerul li{ font-color :White; font-size : 20px; 
-				  float : left; color : White; }	
+				  float : left; color : White;}	
 	.footerul a{ font-color :White; font-size : 15px; padding-left :10px; 
 				  padding-bottom : 10px;
 				  float : left; color :#949596; 
-				  border-left-width : 1px;}						  
+				  border-left-width : 1px; text-decoration: none;}						  
 
 	.footeraddress { float:left; font-size : 12px; color:#949596;
 					margin-left:20px;}
 	.footerp { font-size : 15px; color : White; display : block;}
 	.footerpdiv {height : 100px; display : table;}
-	.footerpdivdiv{ width:1250px; text-align:center; display : table-cell;
+	.footerpdivdiv{ width:1000px; text-align:center; display : table-cell;
 					vertical-align: bottom;
 					position : relative; top : -10px;}
 	

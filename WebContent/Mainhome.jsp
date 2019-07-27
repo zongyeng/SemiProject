@@ -7,48 +7,48 @@
 <title>HOME</title>
 <style type="text/css">
 	.section1 { width : 100%; height : 1300px;}
-	.section1div1 { width : 1256px; height :600px; margin:0 auto;
+	.section1div1 { width : 1006px; height :600px; margin:0 auto;
 					 background-image:url("images/musicpicture2.jpg");
 					 background-repeat: no-repeat;
-					 background-position: -300px;
+					 background-position: -400px;
 					 position: relative; overflow: hidden;}
-	.section1div1div { width : 1256px; height: 100px; color : white;
+	.section1div1div { width : 1006px; height: 100px; color : white;
 					font-size: 30px; text-align: center; padding-top: 50px;
 					font-weight: bold;}
-	.section1div2 { width : 1256px; height :600px; margin:20px auto;}
-	.section1div2div1 { width : 1256px; height: 50px; color : black;
+	.section1div2 { width : 1006px; height :600px; margin:20px auto;}
+	.section1div2div1 { width : 1006px; height: 50px; color : black;
 					font-size: 30px; text-align: center; padding-top: 10px;
 					font-weight: bold; display : table;} 
 	.section1div2div1div {display: table-cell; vertical-align: middle;
 						border-top: 2px groove gray; border-bottom:2px double gray;}
-	.section1div2div2 {width : 1256px; height :600px; margin:20px auto;}
+	.section1div2div2 {width : 1006px; height :600px; margin:20px auto;}
 	.section1div2div2div1 { display : flex; }
-	.section1div2div2div1div { display : flex-basis; width : 250px; height: 270px;
+	.section1div2div2div1div { display : flex-basis; width : 200px; height: 210px;
 								border : solid 1px;}
-	.section1div2div2div1divdiv1 { width : 230px; height: 230px; margin : 0 auto; border : solid 1px;}
-	.section1div2div2div1divdiv2 { width : 250px; height: 15px;text-align : center; magin-top:5px;}
+	.section1div2div2div1divdiv1 { width : 190px; height: 190px; margin : 0 auto; border : solid 1px;}
+	.section1div2div2div1divdiv2 { width : 190px; height: 15px;text-align : center; magin-top:5px;}
 	
 	.section2 { width : 100%; height : 1300px;}
-	.section2div1 { width : 1256px; height :600px; margin:0 auto;
+	.section2div1 { width : 1006px; height :600px; margin:0 auto;
 					 background-image:url("images/braodcastpicture1.jpg");
 					 background-repeat: no-repeat;
-					 background-position: -300px;
+					 background-position: -600px;
 					 position: relative; overflow: hidden;}
-	.section2div1div { width : 1256px; height: 100px; color : white;
+	.section2div1div { width : 1006px; height: 100px; color : white;
 					font-size: 30px; text-align: center; padding-top: 50px;
 					font-weight: bold;}
-	.section2div2 { width : 1256px; height :600px; margin:20px auto;}
-	.section2div2div1 { width : 1256px; height: 50px; color : black;
+	.section2div2 { width : 1006px; height :600px; margin:20px auto;}
+	.section2div2div1 { width : 1006px; height: 50px; color : black;
 					font-size: 30px; text-align: center; padding-top: 10px;
 					font-weight: bold; display : table;} 
 	.section2div2div1div {display: table-cell; vertical-align: middle;
 						border-top: 2px groove gray; border-bottom:2px double gray;}
-	.section2div2div2 {width : 1256px; height :600px; margin:20px auto;}
+	.section2div2div2 {width : 1006px; height :600px; margin:20px auto;}
 	.section2div2div2div1 { display : flex; }
-	.section2div2div2div1div { display : flex-basis; width : 250px; height: 270px;
+	.section2div2div2div1div { display : flex-basis; width : 200px; height: 210px;
 								border : solid 1px;}
-	.section2div2div2div1divdiv1 { width : 230px; height: 230px; margin : 0 auto; border : solid 1px;}
-	.section2div2div2div1divdiv2 { width : 250px; height: 15px;text-align : center; magin-top:5px;}
+	.section2div2div2div1divdiv1 { width : 190px; height: 190px; margin : 0 auto; border : solid 1px;}
+	.section2div2div2div1divdiv2 { width : 190px; height: 15px;text-align : center; magin-top:5px;}
 								
 </style>
 </head>
