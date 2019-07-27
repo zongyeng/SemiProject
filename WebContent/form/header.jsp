@@ -42,7 +42,7 @@
 													border-top-color: rgba(30,110,150,0.5); }			 
 	.headerdiv2divulliul li{list-style: none;}				 
 					 
-	.headerunderdiv { width : 100%; height : 200px; margin : 0 auto;}
+	.headerunderdiv { width : 100%; height : 154px; margin : 0 auto;}
 	.headerdiv2divulliul {display : none; background: rgb(100,100,100); width:200px; 
 	 					  line-height:50px; position : absolute; z-index:200;}
 	.headerdiv2divulliul li {border-bottom : solid 2px; 

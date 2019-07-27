@@ -6,23 +6,44 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
-	.wholesection{width : 100%; height:2000px;}
-	.section1 {width:100%; height : 1000px;}
+	.wholesection{width : 100%; height:1700px;}
+	.section1 {width:100%; height : 1300px;}
 	.section1div {width : 1000px; height : 1000px;
 					margin-left : auto; margin-right : auto;
-					margin-top : 100px;}
+					margin-top : 40px;}
 	.section1divtable {text-align: center;}
-	.section1divtablecaption {height : 30px; margin-bottom:30px;
+	.section1divtablediv {  height : 100px; margin-bottom:30px;
 								font-size: 20px; border-bottom : 1px solid black;
-								border-top : 1px solid black;}
-	.section1divtablecaption a {text-decoration: none; color : black;}
+								border-top : 1px solid black;
+								background-image: url("images/top10picture.jpg");
+								background-repeat: no-repeat;
+								background-position: -300px;
+								position: relative; overflow: hidden;}
+	.section1divtablediv:hover {background-color: rgba(255,255,255,0.6);
+									cursor : pointer; }							
+	.section1divtablediv p {text-align: center; font-size: 30px;
+								font-weight:bold; color : white;
+								margin-top : 30px; background-color: rgba(0,0,0,0.8);}
 	
-	.section2 {width:100%; height : 1000px;}
-	.section2div {width : 1000px; height : 1000px;margin-left : auto;
-			      margin-right : auto; margin-top : 100px;
-			      display : flex;}
-	.section2div {display: flex-basis; width : 300px;
-				margin-right: 50px;}      
+	.section2 {width:100%; height : 400px;}
+	.section2div {width : 1000px; height : 400px; margin : 0 auto;
+			     display : flex;}
+	.section2div div {width : 300px; height:300px;
+					display: flex-basis; width : 300px;
+				    margin: 0 auto;
+				     background-repeat: no-repeat;
+					 background-position: -300px;
+					 position: relative; overflow: hidden;
+					 	border: 1px solid black;}	
+	.section2div div:hover { background-color: rgba(255,255,255,0.6);
+							cursor : pointer;}	
+	.section2divdiv1 { background-image: url("images/popularchartpicture1.jpg");}
+	.section2divdiv2 { background-image: url("images/genrepicture1.jpg"); width : 300px; height:300px;}
+	.section2divdiv3 { background-image: url("images/recommandpicture1.jpg"); width : 300px; height:300px;}
+	.section2divdivdiv { width : 100px; height : 30px;}
+	.section2divdivdiv p{ text-align: center; font-size: 30px;
+							font-weight:bold; color : white;
+							margin-top : 30px; background-color: rgba(0,0,0,0.8);  }
 </style>
 </head>
 <body>
@@ -30,8 +51,10 @@
 <section class ="wholesection">
 	<section class ="section1"> <!-- 뮤직 탑 10/ 테이블로 (인기음악) -->
 		<div class = "section1div">
+			<div class = "section1divtablediv" onclick ="location.href('')">
+					<p> TOP SONG </p> 
+			</div>
 			<table class = "section1divtable" border= "1" >
-				<caption class = "section1divtablecaption"><a href="">인기차트</a> </caption>
 				<colgroup>
 					<col width = "100px"> <!-- 앨범이미지 -->
 					<col width = "100px"> <!-- 등수 숫자  -->
@@ -53,11 +76,20 @@
 	</section>
 	<section class ="section2"> <!-- 신규음악 /추천음악 /장르음악 // 사진3개 일렬로, 누를시 링크이동-->
 		<div class = "section2div">
-			<div class = "section2divdiv">
+			<div class = "section2divdiv1" >
+				<div class = "section2divdivdiv" onclick ="location.href('')"> 
+					<p><span>인기 차트 </span></p>
+				</div>
 			</div>
-			<div class = "section2divdiv">
+			<div class = "section2divdiv2">
+				<div class = "section2divdivdiv" onclick ="location.href('')"> 
+					<p><span>장르 음악 </span></p>
+				</div>
 			</div>
-			<div class = "section2divdiv">
+			<div class = "section2divdiv3">
+				<div class = "section2divdivdiv" onclick ="location.href('')"> 
+					<p><span>추천 음악 </span></p>
+				</div>
 			</div>
 		</div>
 	</section>
