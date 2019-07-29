@@ -44,7 +44,7 @@
 	.section2divdivdiv p{ text-align: center; font-size: 30px;
 							font-weight:bold; color : white;
 							margin-top : 30px; background-color: rgba(0,0,0,0.8);  }
-	.asidemenu{ width : 15%; margin-top: 10px;
+	.asidemenu{ width : clac(100% - 1000px); margin-top: 10px;
 				background-color: rgb(100,100,100); 
 				position: fixed; top : 300px; left:10px;
 				border: solid 2px rgba(200,200,200,0.5);

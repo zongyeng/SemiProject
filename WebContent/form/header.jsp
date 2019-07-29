@@ -19,16 +19,18 @@
 					border-top-color: rgba(200,200,200,0.5); 
 					background: rgb(100,100,100);
 				}
-	.headerdiv1div { width:1000px; height:150px; margin : 0 auto; }
-	.headerdiv1divdiv { width : 1000px;}
+	.headerdivwrapa {float : left; width : 20%; height : 100px; text-align:center;}
+
+	.headerdiv1div { width:70%; height:150px; margin : 0 auto; }
+	.headerdiv1divdiv { width : 100%; height : 96px;}
 	.headerdiv2div a{ padding :2px 20px; margin: 10px; font-size: 15px;
 					vertical-align : middle; font-family: "Goyang";
 					font-weight:bold;}
-	.headerdiv2div { width : 1006px; margin : 0 auto; height : 50px;
+	.headerdiv2div { width : 70%; margin : 0 auto; height : 50px;
 					 vertical-align : middle;
 					 display : flex;}
-	.headerdiv2divul{list-style: none;}	
-	.headerdiv2divulli {float : left; width : 200px; height : 50px;text-align:center;
+	.headerdiv2divul{list-style: none;width : 100%;}	
+	.headerdiv2divulli {float : left; width : calc(20% - 1.2px); height : 50px;text-align:center;
 						border-left : 1px solid; border-left-color:rgba(200,200,200,0.5); 
 						border-bottom : solid 2px;
 						border-bottom-color: rgba(200,200,200,0.5);
@@ -40,10 +42,10 @@
 	.headerdiv2divulli:hover .headerdiv2divulliul{display : block; z-index:200;
 													border-top : solid 2px;
 													border-top-color: rgba(30,110,150,0.5); }			 
-	.headerdiv2divulliul li{list-style: none;}				 
+	.headerdiv2divulliul li{list-style: none;width : 100%;}				 
 					 
 	.headerunderdiv { width : 100%; height : 154px; margin : 0 auto;}
-	.headerdiv2divulliul {display : none; background: rgb(100,100,100); width:200px; 
+	.headerdiv2divulliul {display : none; background: rgb(100,100,100); width:100%; 
 	 					  line-height:50px; position : absolute; z-index:200;}
 	.headerdiv2divulliul li {border-bottom : solid 2px; 
 							border-bottom-color: rgba(200,200,200,0.5);}
@@ -55,18 +57,18 @@
 						
 	.hedaerdiv3 { display : none; width : 100%; height : 300px;}
 	
-	 #search { height: 30px; width: 300px; border: none;
+	 #search { height: 30px; width: 95%; border: none;
  			 border-radius: 10px; padding: 5px;  }
 	 #search:focus {outline : none;}
-	.searchbar{ padding: 30px;}
- 	.searchbardiv {display: flex; margin-left : 10px;}
+	.searchbar{ padding: 30px; width : 55%; }
+ 	.searchbardiv {display: flex; margin-left : 10px; width:60%; margin : 0 auto; text-align: center;}
     .searchbardivbtn { width : 40px; height: 40px; background-color: rgba(200,200,200,0.5);
   				  margin-left: 5px;border: none; border-radius: 10px;}
     .searchbardivbtn:hover {background-color: #B6B6B6; transition: .8s; cursor: pointer;}
     .searchbardivbtn:focus {outline : none;}
     
-    .logindiv {padding-top:35px; padding-bottom: 35px; padding-right: 5px; width : 260px;}
-    .logindivdiv {display : flex; margin-left : 55px;}
+    .logindiv {padding-top:35px; padding-bottom: 35px; padding-right: 5px; width : 20%;}
+    .logindivdiv {display : flex; width:80%; margin : 0 auto;}
     .logindivdivbtn { width : 100px; height: 30px; background-color: rgba(200,200,200,0.5);
   				  margin-left: 15px;border: none; border-radius: 10px; }
   	.logindivdivbtn:hover {background-color: #B6B6B6; transition: .8s; cursor: pointer;}			  
@@ -81,9 +83,11 @@
 			<div class="headerdiv1">
 				<div class="headerdiv1div">
 					<div class = "headerdiv1divdiv">
+						<div class = "headerdivwrapa">
 						<a href = "" class="headerdiv1a"><!-- 홈으로 링크 -->
 							<img alt="Mutes logo" src="images/mutes2.png" width = "200px" height = "100px">
 						</a>
+						</div>
 						
 						<div class="logindiv" style="float : right;">
   							<div class="logindivdiv">
