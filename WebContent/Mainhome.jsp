@@ -22,7 +22,7 @@ $(function(){
 })	
 </script>
 <style type="text/css">
-	.section1 { width : 100%; height : 1400px;}
+	.section1 { width : 100%; height : 1500px;}
 	.section1div1 { width : 70%; height :600px; margin:0 auto;
 					 background-image:url("images/musicpicture2.jpg");
 					 background-repeat: no-repeat;
@@ -45,7 +45,7 @@ $(function(){
 	.section1div2div2div1divdiv2 { width : 95%; height: 30px;text-align : center;
 	 magin-top:5px;}
 	
-	.section2 { width : 100%; height : 1300px;}
+	.section2 { width : 100%; height : 1500px;}
 	.section2div1 { width : 70%; height :600px; margin:0 auto;
 					 background-image:url("images/braodcastpicture1.jpg");
 					 background-repeat: no-repeat;
@@ -55,7 +55,7 @@ $(function(){
 					font-size: 30px; text-align: center; padding-top: 50px;
 					font-weight: bold;}
 	.section2div2 { width : 70%; height :600px; margin:20px auto;}
-	.section2div2div1 { width : 70%; height: 50px; color : black;
+	.section2div2div1 { width : 100%; height: 50px; color : black;
 					font-size: 30px; text-align: center; padding-top: 10px;
 					font-weight: bold; display : table;} 
 	.section2div2div1div {display: table-cell; vertical-align: middle;
