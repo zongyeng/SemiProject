@@ -8,10 +8,10 @@
 <style type="text/css">
 	.wholesection{width : 100%; height:1700px;}
 	.section1 {width:100%; height : 1300px;}
-	.section1div {width : 1000px; height : 1000px;
+	.section1div {width : 70%; height : 1000px;
 					margin-left : auto; margin-right : auto;
 					margin-top : 40px;}
-	.section1divtable {text-align: center;}
+	.section1divtable {text-align: center; width : 100%;}
 	.section1divtablediv {  height : 100px; margin-bottom:30px;
 								font-size: 20px; border-bottom : 1px solid black;
 								border-top : 1px solid black;
@@ -26,7 +26,7 @@
 								margin-top : 30px; background-color: rgba(0,0,0,0.8);}
 	
 	.section2 {width:100%; height : 400px;}
-	.section2div {width : 1000px; height : 400px; margin : 0 auto;
+	.section2div {width : 70%; height : 400px; margin : 0 auto;
 			     display : flex;}
 	.section2div div {width : 300px; height:300px;
 					display: flex-basis; width : 300px;
@@ -44,7 +44,7 @@
 	.section2divdivdiv p{ text-align: center; font-size: 30px;
 							font-weight:bold; color : white;
 							margin-top : 30px; background-color: rgba(0,0,0,0.8);  }
-	.asidemenu{ width : clac(100% - 1000px); margin-top: 10px;
+	.asidemenu{ width : 10%; margin-top: 10px; height : 20%;
 				background-color: rgb(100,100,100); 
 				position: fixed; top : 300px; left:10px;
 				border: solid 2px rgba(200,200,200,0.5);
@@ -75,9 +75,9 @@
 			</div>
 			<table class = "section1divtable" border= "1" >
 				<colgroup>
-					<col width = "100px"> <!-- 앨범이미지 -->
-					<col width = "100px"> <!-- 등수 숫자  -->
-					<col width = "800px"> <!-- 곡 이름 -->
+					<col width = "10%"> <!-- 앨범이미지 -->
+					<col width = "10%"> <!-- 등수 숫자  -->
+					<col width = "79%"> <!-- 곡 이름 -->
 				</colgroup>
 				<thead>
 				</thead>
