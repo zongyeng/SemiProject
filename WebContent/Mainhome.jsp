@@ -8,17 +8,21 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
-
-	$(.section1div2div2div1divdiv1).each(function(){
-		this.attr('height',function(){
-			return $(.section1div2div2div1divdiv1).width;
-		})
-	}
-	$(.section2div2div2div1divdiv1).attr('height',$(.section2div2div2div1divdiv1).width);
+	$(".section1div2div2div1divdiv1").each(function(){
+		$(this).css("height",function(){
+			return $(this).width();
+		});
+	})
+	
+	$(".section2div2div2div1divdiv1").each(function(){
+		$(this).css("height",function(){
+			return $(this).width();
+		});
+	})
 })	
 </script>
 <style type="text/css">
-	.section1 { width : 100%; height : 1300px;}
+	.section1 { width : 100%; height : 1400px;}
 	.section1div1 { width : 70%; height :600px; margin:0 auto;
 					 background-image:url("images/musicpicture2.jpg");
 					 background-repeat: no-repeat;
@@ -35,10 +39,10 @@ $(function(){
 						border-top: 2px groove gray; border-bottom:2px double gray;}
 	.section1div2div2 {width : 100%; height :600px; margin:20px auto;}
 	.section1div2div2div1 { display : flex; }
-	.section1div2div2div1div { display : flex-basis; width : calc(20% - 2px); height: 210px;
+	.section1div2div2div1div { display : flex-basis; width : calc(20% - 2px);
 								border : solid 1px;}
 	.section1div2div2div1divdiv1 { width : 95%; height: 190px; margin : 0 auto; border : solid 1px;}
-	.section1div2div2div1divdiv2 { width : 95%; height: 15px;text-align : center;
+	.section1div2div2div1divdiv2 { width : 95%; height: 30px;text-align : center;
 	 magin-top:5px;}
 	
 	.section2 { width : 100%; height : 1300px;}
@@ -56,12 +60,12 @@ $(function(){
 					font-weight: bold; display : table;} 
 	.section2div2div1div {display: table-cell; vertical-align: middle;
 						border-top: 2px groove gray; border-bottom:2px double gray;}
-	.section2div2div2 {width : 70%; height :600px; margin:20px auto;}
+	.section2div2div2 {width : 100%; height :600px; margin:20px auto;}
 	.section2div2div2div1 { display : flex; }
-	.section2div2div2div1div { display : flex-basis; width : calc(20% - 2px); height: 210px;
+	.section2div2div2div1div { display : flex-basis; width : calc(20% - 2px); ;
 								border : solid 1px;}
 	.section2div2div2div1divdiv1 { width : 95%; height: 190px; margin : 0 auto; border : solid 1px;}
-	.section2div2div2div1divdiv2 { width : 95%; height: 15px;text-align : center; magin-top:5px;}
+	.section2div2div2div1divdiv2 { width : 95%; height: 30px;text-align : center; magin-top:5px;}
 								
 </style>
 </head>
