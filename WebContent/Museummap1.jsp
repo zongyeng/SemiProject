@@ -12,11 +12,23 @@ background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 background-attachment: fixed;
   background-repeat: no-repeat;
 }
+#aa{
+	width: 450px;
+	height: 500px;
+	margin:0 auto;
+	margin-left: 350px;
+}
+#bb{
+	width: 450px;
+	height: 500px;
+	margin:0 auto;
+	margin-left: 350px;
+}
 	tr:nth-child(odd) {background-color: rgb(200,200,200);}
 	
 	tr:last-child{background-color: skyblue;}
 	tr:first-child{background-color: skublue;}
-}
+
 .map_wrap, .map_wrap * {margin:0;padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
 .map_wrap a, .map_wrap a:hover, .map_wrap a:active{color:#000;text-decoration: none;}
 .map_wrap {position:relative;width:800px;height:400px;margin:20px auto;}
@@ -57,6 +69,16 @@ background-attachment: fixed;
 </head>
 <body>
 <%@ include file="./form/header.jsp"%>
+
+
+
+
+	<div class="abc";>
+		<img id="aa" src="images/aa.jpg"><img id="bb" src="images/bb.jpg">
+	</div>
+
+
+
 <div class="map_wrap">
 	
     <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
@@ -65,7 +87,7 @@ background-attachment: fixed;
         <div class="option">
             <div>
                 <form onsubmit="searchPlaces(); return false;">
-                    키워드 : <input type="text" value="디큐브아트센터" id="keyword" size="15"> 
+                    키워드 : <input type="text" value="삼성sac아트홀" id="keyword" size="15"> 
                     <button type="submit">검색하기</button> 
                 </form>
             </div>
@@ -315,16 +337,13 @@ function removeAllChildNods(el) {
 		<tr height="120px">
 			<th>교통안내</th>
 			<th>지하철<br/> 
-				1,2호선 신도림역 하차(1번 출구와 지하도로 연결) <br/>
-				김포국제공항에서 오실 때 : 5호선 김포공항역 > 까치산역에서 2호선 환승 > 신도림역 하차 <br/>
-				인천국제공항에서 오실 때 : 공항철도 인천국제공항역 > 홍대입구에서 2호선 환승 > 신도림역 하차<br/></th>
+				2호선 삼성역에서 하차, 5번출구 – 도보 14분 <br/>
+				2호선 선릉역에서 하차, 10번출구 – 도보 15분 <br/>
+				9호선 삼성중앙역 하차, 5번출구 – 도보 7분<br/></th>
 			<th>버스<br/>
-				(신도림역 1번 출구 하차 시)<br/>
-				영등포/구로 방향 : 10, 83, 88, 510, 11-1, 11-2(일반), 320, 301(좌석)<br/>
-				 503, 670, 260, 160, 600(간선)<br/>
-				 6515, 5714, 6512, 6513, 6637, 6640, 5615(지선)<br/>
-				한별구림어린이집 or 포스사거리 앞 하차 - 도보2분<br/>
-				 버스에서 하차하신 후 지하도를 통하여 신도림역 1번 출구로 나오시면 바로 연결되어 있습니다.</th>
+				2호선 삼성역에서 하차, 5번출구 – 도보 14분 <br/>
+				2415,3011,3411,강남07,강남08, <br/>
+				한별구림어린이집 or 포스사거리 앞 하차 - 도보2분<br/></th>
 		</tr>
 	</table>
 	</div>
