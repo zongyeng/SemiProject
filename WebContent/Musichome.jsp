@@ -6,11 +6,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
-	.wholesection{width : 100%; height:1700px;}
+	.wholesection{width : 100%; height:1700px; margin-top : 40px;}
 	.section1 {width:100%; height : 1300px;}
 	.section1div {width : 70%; height : 1000px;
-					margin-left : auto; margin-right : auto;
-					margin-top : 40px;}
+					margin-left : auto; margin-right : auto;}
 	.section1divtable {text-align: center; width : 100%;}
 	.section1divtablediv {  height : 100px; margin-bottom:30px;
 								font-size: 20px; border-bottom : 1px solid black;
@@ -44,9 +43,9 @@
 	.section2divdivdiv p{ text-align: center; font-size: 30px;
 							font-weight:bold; color : white;
 							margin-top : 30px; background-color: rgba(0,0,0,0.8);  }
-	.asidemenu{ width : 10%; margin-top: 10px; height : 20%;
+	.asidemenu{ width : calc(13% - 2px); height : 20%;
 				background-color: rgb(100,100,100); 
-				position: fixed; top : 300px; left:10px;
+				position: fixed; top : 195px; left:1%;
 				border: solid 2px rgba(200,200,200,0.5);
 				text-decoration: none;
 				}
