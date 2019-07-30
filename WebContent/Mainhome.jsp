@@ -5,6 +5,18 @@
 <head>
 <meta charset="UTF-8">
 <title>HOME</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	$(.section1div2div2div1divdiv1).each(function(){
+		this.attr('height',function(){
+			return $(.section1div2div2div1divdiv1).width;
+		})
+	}
+	$(.section2div2div2div1divdiv1).attr('height',$(.section2div2div2div1divdiv1).width);
+})	
+</script>
 <style type="text/css">
 	.section1 { width : 100%; height : 1300px;}
 	.section1div1 { width : 70%; height :600px; margin:0 auto;
@@ -12,7 +24,7 @@
 					 background-repeat: no-repeat;
 					 background-position: -400px;
 					 position: relative; overflow: hidden;}
-	.section1div1div { width : 70%; height: 100px; color : white;
+	.section1div1div { width : 100%; height: 100px; color : white;
 					font-size: 30px; text-align: center; padding-top: 50px;
 					font-weight: bold;}
 	.section1div2 { width : 70%; height :600px; margin:20px auto;}
@@ -33,9 +45,9 @@
 	.section2div1 { width : 70%; height :600px; margin:0 auto;
 					 background-image:url("images/braodcastpicture1.jpg");
 					 background-repeat: no-repeat;
-					 background-position: -600px;
+					 background-position: -400px;
 					 position: relative; overflow: hidden;}
-	.section2div1div { width : 1006px; height: 100px; color : white;
+	.section2div1div { width : 100%; height: 100px; color : white;
 					font-size: 30px; text-align: center; padding-top: 50px;
 					font-weight: bold;}
 	.section2div2 { width : 70%; height :600px; margin:20px auto;}
@@ -46,10 +58,10 @@
 						border-top: 2px groove gray; border-bottom:2px double gray;}
 	.section2div2div2 {width : 70%; height :600px; margin:20px auto;}
 	.section2div2div2div1 { display : flex; }
-	.section2div2div2div1div { display : flex-basis; width : 200px; height: 210px;
+	.section2div2div2div1div { display : flex-basis; width : calc(20% - 2px); height: 210px;
 								border : solid 1px;}
-	.section2div2div2div1divdiv1 { width : 190px; height: 190px; margin : 0 auto; border : solid 1px;}
-	.section2div2div2div1divdiv2 { width : 190px; height: 15px;text-align : center; magin-top:5px;}
+	.section2div2div2div1divdiv1 { width : 95%; height: 190px; margin : 0 auto; border : solid 1px;}
+	.section2div2div2div1divdiv2 { width : 95%; height: 15px;text-align : center; magin-top:5px;}
 								
 </style>
 </head>
