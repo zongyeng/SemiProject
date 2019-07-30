@@ -12,6 +12,18 @@ background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 background-attachment: fixed;
   background-repeat: no-repeat;
 }
+#aa{
+	width: 450px;
+	height: 500px;
+	margin:0 auto;
+	margin-left: 350px;
+}
+#bb{
+	width: 450px;
+	height: 500px;
+	margin:0 auto;
+	margin-left: 350px;
+}
 	tr:nth-child(odd) {background-color: rgb(200,200,200);}
 	
 	tr:last-child{background-color: skyblue;}
@@ -57,6 +69,16 @@ background-attachment: fixed;
 </head>
 <body>
 <%@ include file="./form/header.jsp"%>
+
+
+
+
+	<div class="abc";>
+		<img id="aa" src="images/aa.jpg"><img id="bb" src="images/bb.jpg">
+	</div>
+
+
+
 <div class="map_wrap">
 	
     <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
