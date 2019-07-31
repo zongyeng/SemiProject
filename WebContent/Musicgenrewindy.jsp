@@ -5,8 +5,60 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	var num=0;
+	function select1(){
+		document.getElementById("popular").style.background="rgba(0,0,0,0.6)";
+		document.getElementById("popular").style.color = "white";
+		document.getElementById("recommand").style.background ="rgba(0,0,0,0)";
+		document.getElementById("recommand").style.color = "black";
+	}
+	
+	function select2(){
+		document.getElementById("popular").style.background ="rgba(0,0,0,0)";
+		document.getElementById("popular").style.color = "black";
+		document.getElementById("recommand").style.background ="rgba(0,0,0,0.6)";
+		document.getElementById("recommand").style.color = "white";
+	}
+	
+	function ganre1(){
+		num=1;
+		ganre();
+	}
+	function ganre2(){
+		num=2;
+		ganre();
+	}
+	function ganre3(){
+		num=3;
+		ganre();
+	}
+	function ganre4(){
+		num=4;
+		ganre();
+	}
+	function ganre5(){
+		num=5;
+		ganre();
+	}
+	function ganre6(){
+		num=6;
+		ganre();
+	}
+	
+	function ganre(){
+		for(var a=1;a<=6;a++){
+		document.getElementById("ganre"+a).style.color="black";
+		document.getElementById("ganre"+a).style.background ="rgba(0,0,0,0)";	
+		}
+		document.getElementById("ganre"+num).style.background = "rgba(0,0,0,0.6)";
+		document.getElementById("ganre"+num).style.color = "white";
+	}
+
+</script>
 <style type="text/css">
-	.wholesection{width : 100%; height:7700px; margin-top : 40px;}
+	.wholesection{width : 100%; height:1500px; margin-top : 40px;}
 	.section1 {width:100%; height : 1300px;}
 	.section1div {width : 70%; height : 1000px;
 					margin-left : auto; margin-right : auto;}
@@ -53,7 +105,13 @@
 					color:#cccccc;}
 	.asidemenu ul>li:hover {color:#ffffff; cursor: pointer;}
 	.asidemenu ul { text-decoration: none; list-style: none; }
-	.buttongroup {height: 50px; margin : 0 auto;}
+	.buttongroup {height: 120px; margin : 0 auto;}
+	.buttongroupdiv1 button {  width : 49%; height : 40px; 	
+				border-style: none;
+				border: 1px solid black;
+				background-color: rgba(0,0,0,0); color : black; padding : 5px;}
+	.buttongroupdiv1 {width : 90%; height: 60px; margin: 0 auto;}
+	.buttongroupdiv1 button:hover { background-color: rgba(0,0,0,0.6); color : white; cursor: pointer;}
 	.buttongroupdiv2 button {  width : 16%; height : 40px; 	
 				border-style: none;
 				border: 1px solid black;
@@ -77,20 +135,28 @@
 		<div class = "section1div">
 		<div class="buttongroup"> 
 			<div class = "buttongroupwrap">
+				<div class="buttongroupdiv1">
+					<button id="popular" style = "border-top-left-radius: 5px;
+							border-bottom-left-radius:5px;background : rgba(0,0,0,0.6);
+							color:white;" onclick="select1()"> popular </button>
+					<button id="recommand" style="border-bottom-right-radius:5px; 
+					border-top-right-radius: 5px;" onclick="select2()">recommand</button>
+				</div>
 				<div class="buttongroupdiv2">
-					<button class="sun" style = "border-top-left-radius: 5px;
-							border-bottom-left-radius:5px;">sun</button>
-					<button class="cloud">cloud</button>
-					<button class="rain">rain</button>
-					<button class="storm">storm</button>
-					<button class="snow">snow</button>
-					<button class="wind" style="border-bottom-right-radius:5px; 
-					border-top-right-radius: 5px;">wind</button>
+					<button id="ganre1" style = "border-top-left-radius: 5px;
+							border-bottom-left-radius:5px; background : rgba(0,0,0,0.6);
+							color:white;" onclick="ganre1()">sun</button>
+					<button id="ganre2" onclick="ganre2()">cloud</button>
+					<button id="ganre3" onclick="ganre3()">rain</button>
+					<button id="ganre4" onclick="ganre4()">storm</button>
+					<button id="ganre5" onclick="ganre5()">snow</button>
+					<button id="ganre6" style="border-bottom-right-radius:5px; 
+					border-top-right-radius: 5px;" onclick="ganre6()">wind</button>
 				</div>
 			</div>
 		</div>
 			<div class = "section1divtablediv" onclick ="location.href('')">
-					<p> 뮤즈 차트 </p> 
+					<p> 장르별 top10 차트 </p> 
 			</div>
 			<table class = "section1divtable" border= "1" >
 				<colgroup>
@@ -116,7 +182,7 @@
 					</tr>
 				</thead>
 				<tbody> <!-- 100개 까지만 출력 -->
-				<% for(int a=1; a<=100; a++) {%>
+				<% for(int a=1; a<=10; a++) {%>
 					<tr height = 70px;>
 						<td>순위<%= a %></td>
 						<td>앨범이미지<%= a %></td>
