@@ -67,8 +67,8 @@
 				border: 1px solid black;
 				background-color: rgba(0,0,0,0.6); color : white; padding : 5px;
 				position : relative; left : -6px;}
-	.weekbtn:hover { background-color: rgba(0,0,0,0.6); color : white; cursor: pointer;}
-	.monthbtn:hover { cursor: pointer;}
+	.weekbtn:hover { background-color: rgba(0,0,0,0.6); color : white;  cursor: pointer;}
+	.monthbtn:hover {cursor: pointer;}
 	.buttongroupdiv2 {float : left; width : 170px; height: 40px;}
 </style>
 </head>
@@ -118,6 +118,7 @@
 						<td>재생</td>
 						<td>담기</td>
 						<td>♡</td>
+						
 					</tr>
 				</thead>
 				<tbody> <!-- 100개 까지만 출력 -->
