@@ -62,7 +62,8 @@
 	.monthbtn { width : 80px; height : 40px; margin-left: -7px;
 				border-top-right-radius: 5px;
 				border-bottom-right-radius: 5px;}
-	.buttongroupdiv {width : 160px; height: 40px;}
+	.buttongroupdiv {width : 160px; height: 40px;
+					wi}
 </style>
 </head>
 <body>	
