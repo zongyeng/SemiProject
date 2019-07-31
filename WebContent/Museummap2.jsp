@@ -12,11 +12,35 @@ background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 background-attachment: fixed;
   background-repeat: no-repeat;
 }
+.abcd{
+	width:100%;
+}
+#cc{
+	width: 450px;
+	height: 500px;
+	margin:0 auto;
+	margin-left: 26%;
+}
+#dd{
+	width: 450px;
+	height: 500px;
+	margin:0 auto;
+	margin-right:26%;
+}
 	tr:nth-child(odd) {background-color: rgb(200,200,200);}
 	
 	tr:last-child{background-color: skyblue;}
 	tr:first-child{background-color: skublue;}
 	
+body {
+	text-align: center;
+}
+h1 {
+	color:red;
+}
+h2{
+	color:blue;
+}
 .map_wrap, .map_wrap * {margin:0;padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
 .map_wrap a, .map_wrap a:hover, .map_wrap a:active{color:#000;text-decoration: none;}
 .map_wrap {position:relative;width:800px;height:400px;margin:20px auto;}
@@ -57,6 +81,32 @@ background-attachment: fixed;
 </head>
 <body>
 <%@ include file="./form/header.jsp"%>
+	<br/>
+	<div class="abcd";>
+		<img id="cc" src="images/cc.jpg"><img id="dd" src="images/dd.jpg">
+	</div>
+	
+		<h1>디큐브씨어터에서 차원이다른</h1><br/>
+		<h1>감동의 순간을 경험 하실수 있습니다.</h1><br/>
+		<h3>디큐브씨어터는 1,242석 규모의 국내 최고층, 서남권 최대 규모의 공연장입니다.</h3><br/>
+		<pre>◦ 야외 콘서트에서만 사용되던 L-ACOUSTICS 社의 K1시리즈 스피커를 실내 공연장에 도입하여 온 몸의 감각을 깨우는 생생한 무대 음향을 구현합니다.</pre><br/>
+		<pre>◦ 무대 앞 선에서 객석 끝까지의 거리를 28m로 설계하여 어느 좌석에서도 공연자의 숨결을 생생하게 느낄 수 있는 최상의 관람 조건을 제공합니다.</pre><br/>
+		<pre>◦ 뮤지컬은 물론 연극, 무용, 콘서트 등 어떤 장르의 공연에도 최적의 공연환경을 제공합니다.</pre><br/>
+		<h3>리허설룸</h3><br/>
+		<pre>편의시설 : 남녀탈의실 및 샤워실, 업라이트 피아노(1대), 발레 바(10개), 락커</pre><br/>
+		<h3>분장실</h3><br/>
+		<pre>그룹분장실 4개(최대 14명 수용 가능), 단독분장실 4개<br/>
+		</br>편의시설 : 화장실 및 샤워실, 정수기, 냉장고</pre><br/>
+		<h3>수선실</h3><br/>
+		<pre>편의시설 : 세탁기, 건조기, 다리미, 미싱</pre><br/>
+		<h3>그린룸</h3><br/>
+		<pre>편의시설 : 소파, 의자, 정수기, 집진기</pre><br/>
+		<h3>그 밖에 무대(9F)<br/>
+		 상수의 퀵체인지룸, 프로덕션 사무실(무선인터넷 지원), 락커룸, 악기보관실을 지원합니다.</h3>
+		<br/>
+		<h1>----------------------------------------------------------------</h1>
+		<h2>오시는길 안내</h2>
+		
 <div class="map_wrap">
 	
     <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>

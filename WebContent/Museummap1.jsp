@@ -12,23 +12,34 @@ background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 background-attachment: fixed;
   background-repeat: no-repeat;
 }
+.abc{
+	width:100%;
+}
 #aa{
 	width: 450px;
 	height: 500px;
 	margin:0 auto;
-	margin-left: 350px;
+	margin-left: 20%;
 }
 #bb{
 	width: 450px;
 	height: 500px;
 	margin:0 auto;
-	margin-left: 350px;
+	margin-right:20%;
 }
 	tr:nth-child(odd) {background-color: rgb(200,200,200);}
 	
 	tr:last-child{background-color: skyblue;}
 	tr:first-child{background-color: skublue;}
-
+body {
+	text-align: center;
+}
+h1 {
+	color:red;
+}
+h2 {
+	color:blue;
+}
 .map_wrap, .map_wrap * {margin:0;padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
 .map_wrap a, .map_wrap a:hover, .map_wrap a:active{color:#000;text-decoration: none;}
 .map_wrap {position:relative;width:800px;height:400px;margin:20px auto;}
@@ -70,14 +81,33 @@ background-attachment: fixed;
 <body>
 <%@ include file="./form/header.jsp"%>
 
+	
 
-
-
+	<br/>
 	<div class="abc";>
 		<img id="aa" src="images/aa.jpg"><img id="bb" src="images/bb.jpg">
 	</div>
-
-
+	<h1>삼성동 코엑스 앞, 최신의 명품 복합문화 공연장</h1>
+	<h3>무용, 연극, 뮤지컬, 콘서트, 클래식, 패션쇼, 학술세미나, 기업행사 등<br/>
+	 다양한 장르의 공연 및 행사가 가능한 다목적 공간</h3><br/>
+	<pre>◦2017년 4월 개관한 SAC 아트홀은 기존 보유한 2개의 공연장(SAC아리랑홀, SAC갤럭시홀)과 별도로,<br/>
+	 보다 품격있는 문화예술공연을 제공하기 위해 건립된 300여석 규모의 전문 공연장이다.<br/> 
+	◦서울종합예술실용학교에서 건립한 SAC아트홀은 최첨단 조명․음향장비, 남녀 분장실, 그린 룸, 연습실을 구비하여<br/>
+	 무용을 비롯해 연극, 뮤지컬, 연주회, 패션쇼, 컨퍼런스 등 어떤 장르도 수용 가능한 다목적 공연장이다.</pre>
+	<br/>
+	<h3>작품의 특성과 상황에 따라 자유로운 공간 활용이 가능한 실용적 공간</h3><br/>	
+	<pre>◦공간 활용을 고려한 전동 설비 시스템, 스크린․ 빔프로젝터와 함께 전 좌석 영국제 오디언스 전동수납식 객석을 갖추고 있어<br/>
+	 각종 세미나와 연회장으로 이용 가능하며, 스탠딩 공연의 경우 500명 이상 수용이 가능한 공간이다.</pre>
+	<br/>
+	<h3>비즈니스와 쇼핑, 문화의 랜드마크인 삼성동 코엑스에 위치한 힐링 공간</h3><br/>
+	<pre>◦삼성동은 다양한 공연장과 편의시설로 유명한 한류문화의 중심지. SAC 아트홀은 삼성역, 삼성중앙역 사이 역세권에 위치하여<br/>
+	 대중교통이나 승용차 편으로 접근성이 뛰어나다. 또한 1층 로비와 함께 다양한 음료를 즐길 수 있는 <br/>
+	 카페, 야외테라스(200명 수용), 편리한 주차시설(50대), <br/>
+	 식사 장소로 활용가능한 바리스타실습실 등의 편의시설이 갖추어져 있어 편안하고 쾌적한 공연 관람이 가능하다.</pre>
+	<br/>
+	<h1>----------------------------------------------------------------</h1>
+	<h2>오시는길 안내</h2>
+	
 
 <div class="map_wrap">
 	
