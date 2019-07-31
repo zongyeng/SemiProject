@@ -53,17 +53,23 @@
 					color:#cccccc;}
 	.asidemenu ul>li:hover {color:#ffffff; cursor: pointer;}
 	.asidemenu ul { text-decoration: none; list-style: none; }
-	.buttongroup { 	border-style: none;
-					border: 1px solid skyblue;
-					background-color: rgba(0,0,0,0); color : skyblue; padding : 5px;}
-	.weekbtn { width : 80px; height : 40px; margin-left: -7px; 
+	.buttongroup {height: 50px;}
+	.weekbtn {  width : 80px; height : 40px; 
 				border-top-left-radius: 5px;
-				border-bottom-left-radius:5px;}
-	.monthbtn { width : 80px; height : 40px; margin-left: -7px;
+				border-bottom-left-radius:5px;
+				border-style: none;
+				border: 1px solid black;
+				background-color: rgba(0,0,0,0); color : black; padding : 5px;}
+	.monthbtn { width : 80px; height : 40px;
 				border-top-right-radius: 5px;
-				border-bottom-right-radius: 5px;}
-	.buttongroupdiv {width : 160px; height: 40px;
-					wi}
+				border-bottom-right-radius: 5px;
+				border-style: none;
+				border: 1px solid black;
+				background-color: rgba(0,0,0,0.6); color : white; padding : 5px;
+				position : relative; left : -6px;}
+	.weekbtn:hover { background-color: rgba(0,0,0,0.6); color : white; cursor: pointer;}
+	.monthbtn:hover { cursor: pointer;}
+	.buttongroupdiv2 {float : left; width : 170px; height: 40px;}
 </style>
 </head>
 <body>	
@@ -81,9 +87,11 @@
 		<div class = "section1div">
 		<h1>100개 한번에 보여줄지 페이징 쓸지 고민할것</h1>
 		<div class="buttongroup"> 
-			<div class="buttongroupdiv">
-				<button class="weekbtn">주간</button>
-				<button class="monthbtn">월간</button>
+			<div class = "buttongroupwrap">
+				<div class="buttongroupdiv2">
+					<button class="weekbtn">주간</button>
+					<button class="monthbtn">월간</button>
+				</div>
 			</div>
 		</div>
 			<div class = "section1divtablediv" onclick ="location.href('')">
@@ -101,6 +109,16 @@
 					<col width = "2%"> <!-- 좋아요 버튼 -->
 				</colgroup>
 				<thead>
+					<tr style="color: rgba(0,0,0,0.6); font-size: 8px;"  height = 30px;>
+						<td>순위</td>
+						<td>앨범이미지</td>
+						<td>곡</td>
+						<td>작곡가</td>
+						<td>앨범이름</td>
+						<td>재생</td>
+						<td>담기</td>
+						<td>♡</td>
+					</tr>
 				</thead>
 				<tbody> <!-- 100개 까지만 출력 -->
 				<% for(int a=1; a<=100; a++) {%>
@@ -110,9 +128,9 @@
 						<td>곡 이름출력<%= a %></td>
 						<td>작곡가이름<%= a %></td>
 						<td>앨범이름<%= a %></td>
-						<td>재생<%= a %></td>
-						<td>담기<%= a %></td>
-						<td>좋아<%= a %></td>
+						<td>재생</td>
+						<td>담기</td>
+						<td>좋아</td>
 					</tr>
 				<%}%>
 				</tbody>
