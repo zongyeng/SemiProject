@@ -60,8 +60,8 @@
 	 #search { height: 30px; width: 95%; border: none;
  			 border-radius: 10px; padding: 5px;  }
 	 #search:focus {outline : none;}
-	.searchbar{ padding: 30px; width : 55%; }
- 	.searchbardiv {display: flex; margin-left : 10px; width:60%; margin : 0 auto; text-align: center;}
+	.searchbar{ padding: 30px; width : 45%; }
+ 	.searchbardiv {display: flex; margin-left : 10px; width:80%; margin : 0 auto; text-align: center;}
     .searchbardivbtn { width : 40px; height: 40px; background-color: rgba(200,200,200,0.5);
   				  margin-left: 5px;border: none; border-radius: 10px;}
     .searchbardivbtn:hover {background-color: #B6B6B6; transition: .8s; cursor: pointer;}

@@ -21,7 +21,7 @@
 				    display: table-cell;
 				    vertical-align: middle;}
 					
-	.footerlogo { margin-right : 20px; float : left }
+	.footerlogo { margin-right : 20px; float : left; }
 	.footerul { list-style:none; }
 	.footerul li{ font-color :White; font-size : 20px; 
 				  float : left; color : White;}	
@@ -69,7 +69,7 @@
 								</a> 
 							</li>
 							<li>
-								<a href="" target="blank">
+								<a href="login.jsp" target="blank">
 								 청소년 보호정책
 								</a> 
 							</li>

@@ -8,7 +8,7 @@
 </head>
 <body>
 <%@ include file="./form/header.jsp"%>
-<h1>대충 뮤직 탑100</h1>
+<h1>대충 음악 장르들</h1>
 <%@ include file="./form/footer.jsp"%>
 </body>
 </html>

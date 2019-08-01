@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
-	.wholesection{width : 100%; height:1700px; margin-top : 40px;}
+	.wholesection{width : 100%; height:7700px; margin-top : 40px;}
 	.section1 {width:100%; height : 1300px;}
 	.section1div {width : 70%; height : 1000px;
 					margin-left : auto; margin-right : auto;}
@@ -53,9 +53,26 @@
 					color:#cccccc;}
 	.asidemenu ul>li:hover {color:#ffffff; cursor: pointer;}
 	.asidemenu ul { text-decoration: none; list-style: none; }
+	.buttongroup {height: 50px;}
+	.weekbtn {  width : 80px; height : 40px; 
+				border-top-left-radius: 5px;
+				border-bottom-left-radius:5px;
+				border-style: none;
+				border: 1px solid black;
+				background-color: rgba(0,0,0,0); color : black; padding : 5px;}
+	.monthbtn { width : 80px; height : 40px;
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+				border-style: none;
+				border: 1px solid black;
+				background-color: rgba(0,0,0,0.6); color : white; padding : 5px;
+				position : relative; left : -6px;}
+	.weekbtn:hover { background-color: rgba(0,0,0,0.6); color : white;  cursor: pointer;}
+	.monthbtn:hover {cursor: pointer;}
+	.buttongroupdiv2 {float : left; width : 170px; height: 40px;}
 </style>
 </head>
-<body>
+<body>	
 <%@ include file="./form/header.jsp"%>
 <aside class = "asidemenu">
 		<ul>
@@ -66,49 +83,59 @@
 		</ul>
 	</aside>
 <section class ="wholesection">
-	
-	<section class ="section1"> <!-- 뮤직 탑 10/ 테이블로 (인기음악) -->
+	<section class ="section1"> <!-- 뮤직 탑 100/ 테이블로 (인기음악) -->
 		<div class = "section1div">
+		<h1>100개 한번에 보여줄지 페이징 쓸지 고민할것</h1>
+		<div class="buttongroup"> 
+			<div class = "buttongroupwrap">
+				<div class="buttongroupdiv2">
+					<button class="weekbtn">주간</button>
+					<button class="monthbtn">월간</button>
+				</div>
+			</div>
+		</div>
 			<div class = "section1divtablediv" onclick ="location.href('')">
-					<p> TOP SONG </p> 
+					<p> 뮤즈 차트 </p> 
 			</div>
 			<table class = "section1divtable" border= "1" >
 				<colgroup>
-					<col width = "10%"> <!-- 앨범이미지 -->
-					<col width = "10%"> <!-- 등수 숫자  -->
-					<col width = "79%"> <!-- 곡 이름 -->
+					<col width = "4%"> <!-- 순위-->
+					<col width = "10%"> <!-- 앨범이미지  -->
+					<col width = "60%"> <!-- 곡 이름 -->
+					<col width = "10%"> <!-- 작곡가 이름 -->
+					<col width = "10%"> <!-- 앨범 이름 -->
+					<col width = "2%"> <!-- 재생 버튼 -->
+					<col width = "2%"> <!-- 담기 버튼 -->
+					<col width = "2%"> <!-- 좋아요 버튼 -->
 				</colgroup>
 				<thead>
+					<tr style="color: rgba(0,0,0,0.6); font-size: 8px;"  height = 30px;>
+						<td>순위</td>
+						<td>앨범이미지</td>
+						<td>곡</td>
+						<td>작곡가</td>
+						<td>앨범이름</td>
+						<td>재생</td>
+						<td>담기</td>
+						<td>♡</td>
+						
+					</tr>
 				</thead>
-				<tbody> <!-- 10개 까지만 출력 -->
-				<% for(int a=1; a<=10; a++) {%>
-					<tr height = 100px;>
-						<td>앨범사진<%= a %></td>
-						<td><%= a %></td>
+				<tbody> <!-- 100개 까지만 출력 -->
+				<% for(int a=1; a<=100; a++) {%>
+					<tr height = 70px;>
+						<td>순위<%= a %></td>
+						<td>앨범이미지<%= a %></td>
 						<td>곡 이름출력<%= a %></td>
+						<td>작곡가이름<%= a %></td>
+						<td>앨범이름<%= a %></td>
+						<td>재생</td>
+						<td>담기</td>
+						<td>좋아</td>
 					</tr>
 				<%}%>
 				</tbody>
 			</table>
-		</div>
-	</section>
-	<section class ="section2"> <!-- 신규음악 /추천음악 /장르음악 // 사진3개 일렬로, 누를시 링크이동-->
-		<div class = "section2div">
-			<div class = "section2divdiv1" >
-				<div class = "section2divdivdiv" onclick ="location.href('')"> 
-					<p><span>인기 차트 </span></p>
-				</div>
-			</div>
-			<div class = "section2divdiv2">
-				<div class = "section2divdivdiv" onclick ="location.href('')"> 
-					<p><span>장르 음악 </span></p>
-				</div>
-			</div>
-			<div class = "section2divdiv3">
-				<div class = "section2divdivdiv" onclick ="location.href('')"> 
-					<p><span>추천 음악 </span></p>
-				</div>
-			</div>
 		</div>
 	</section>
 </section>
