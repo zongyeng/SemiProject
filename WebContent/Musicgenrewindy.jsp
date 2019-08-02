@@ -21,7 +21,10 @@
 		document.getElementById("recommand").style.background ="rgba(0,0,0,0.6)";
 		document.getElementById("recommand").style.color = "white";
 	}
-	
+	function ganre0(){
+		num=0;
+		ganre();
+	}
 	function ganre1(){
 		num=1;
 		ganre();
@@ -47,8 +50,9 @@
 		ganre();
 	}
 	
+	
 	function ganre(){
-		for(var a=1;a<=6;a++){
+		for(var a=0;a<=6;a++){
 		document.getElementById("ganre"+a).style.color="black";
 		document.getElementById("ganre"+a).style.background ="rgba(0,0,0,0)";	
 		}
@@ -112,7 +116,7 @@
 				background-color: rgba(0,0,0,0); color : black; padding : 5px;}
 	.buttongroupdiv1 {width : 90%; height: 60px; margin: 0 auto;}
 	.buttongroupdiv1 button:hover { background-color: rgba(0,0,0,0.6); color : white; cursor: pointer;}
-	.buttongroupdiv2 button {  width : 16%; height : 40px; 	
+	.buttongroupdiv2 button {  width : 13.66%; height : 40px; 	
 				border-style: none;
 				border: 1px solid black;
 				background-color: rgba(0,0,0,0); color : black; padding : 5px;}
@@ -122,14 +126,6 @@
 </head>
 <body>	
 <%@ include file="./form/header.jsp"%>
-<aside class = "asidemenu">
-		<ul>
-			<li onclick="loction.href=''"> TOP100</li>
-			<li onclick="loction.href=''"> 장르별 음악</li>
-			<li onclick="loction.href=''"> 인기 음악</li>
-			<li onclick="loction.href=''"> 추천 음악</li>		
-		</ul>
-	</aside>
 <section class ="wholesection">
 	<section class ="section1">
 		<div class = "section1div">
@@ -143,9 +139,10 @@
 					border-top-right-radius: 5px;" onclick="select2()">recommand</button>
 				</div>
 				<div class="buttongroupdiv2">
-					<button id="ganre1" style = "border-top-left-radius: 5px;
+					<button id="ganre0" style = "border-top-left-radius: 5px;
 							border-bottom-left-radius:5px; background : rgba(0,0,0,0.6);
-							color:white;" onclick="ganre1()">sun</button>
+							color:white;" onclick="ganre0()">all</button>
+					<button id="ganre1" onclick="ganre1()">sun</button>
 					<button id="ganre2" onclick="ganre2()">cloud</button>
 					<button id="ganre3" onclick="ganre3()">rain</button>
 					<button id="ganre4" onclick="ganre4()">storm</button>
@@ -156,7 +153,7 @@
 			</div>
 		</div>
 			<div class = "section1divtablediv" onclick ="location.href('')">
-					<p> 장르별 top10 차트 </p> 
+					<p> MUTES 차트 </p> 
 			</div>
 			<table class = "section1divtable" border= "1" >
 				<colgroup>
@@ -184,7 +181,7 @@
 				<tbody> <!-- 100개 까지만 출력 -->
 				<% for(int a=1; a<=10; a++) {%>
 					<tr height = 70px;>
-						<td>순위<%= a %></td>
+						<td><%= a %></td>
 						<td>앨범이미지<%= a %></td>
 						<td>곡 이름출력<%= a %></td>
 						<td>작곡가이름<%= a %></td>
