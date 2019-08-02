@@ -121,10 +121,8 @@
 						<li class = "headerdiv2divulli">
 							<a class = "headerdiv2divullia" href =""> 음악 </a>
 							<ul class = "headerdiv2divulliul">
-								<li><a href=""> TOP 100 </a></li>
 								<li><a href=""> 장르별 음악 </a></li>
-								<li><a href=""> 인기 음악</a></li>
-								<li><a href=""> 추천 음악</a></li>
+								<li><a href=""> 앨범 음악</a></li>
 							</ul>
 						</li>
 						<li class = "headerdiv2divulli">
