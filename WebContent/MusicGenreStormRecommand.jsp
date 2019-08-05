@@ -133,19 +133,21 @@
 			<div class = "buttongroupwrap">
 				<div class="buttongroupdiv1">
 					<button id="popular" style = "border-top-left-radius: 5px;
-							border-bottom-left-radius:5px;background : rgba(0,0,0,0.6);
-							color:white;" onclick="select1()"> popular </button>
+							border-bottom-left-radius:5px;" onclick="select1()"> popular </button>
 					<button id="recommand" style="border-bottom-right-radius:5px; 
-					border-top-right-radius: 5px;" onclick="select2()">recommand</button>
+							border-top-right-radius: 5px; background : rgba(0,0,0,0.6);
+							color:white;" onclick="select2()">recommand</button>
 				</div>
 				<div class="buttongroupdiv2">
-					<button id="ganre0" style = "border-top-left-radius: 5px;
-							border-bottom-left-radius:5px; background : rgba(0,0,0,0.6);
-							color:white;" onclick="ganre0()">all</button>
+					<button id="ganre0" onclick="ganre0()" 
+							style = "border-top-left-radius: 5px;
+							border-bottom-left-radius:5px;">all</button>
 					<button id="ganre1" onclick="ganre1()">sun</button>
 					<button id="ganre2" onclick="ganre2()">cloud</button>
 					<button id="ganre3" onclick="ganre3()">rain</button>
-					<button id="ganre4" onclick="ganre4()">storm</button>
+					<button id="ganre4" onclick="ganre4()"
+							style = "background : rgba(0,0,0,0.6);
+							color:white;">storm</button>
 					<button id="ganre5" onclick="ganre5()">snow</button>
 					<button id="ganre6" style="border-bottom-right-radius:5px; 
 					border-top-right-radius: 5px;" onclick="ganre6()">wind</button>
@@ -178,6 +180,7 @@
 						<td>♡</td>
 					</tr>
 				</thead>
+				
 				<tbody> <!-- 100개 까지만 출력 -->
 				<% for(int a=1; a<=10; a++) {%>
 					<tr height = 70px;>
