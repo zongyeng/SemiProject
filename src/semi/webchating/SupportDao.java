@@ -12,6 +12,7 @@ public class SupportDao {
 		try {
 			session = getSqlSessionFactory.getSqlSessionFactory().openSession();
 			dto = session.selectOne(namespace+"selectOne",seq);
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
